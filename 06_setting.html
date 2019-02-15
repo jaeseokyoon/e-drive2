@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gaea Soft</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1100">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_input.css">
+  <link rel="stylesheet" href="css/style_popup.css">
+  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <ul class="main_menu">
+      <li>
+        <img src="./images/logo.png" alt="로고">
+      </li>
+      <li>
+        <a class="" href="01_group.html">조직도</a>
+      </li>
+      <li>
+        <a href="02_manage.html">사용자 관리</a>
+      </li>
+      <li>
+        <a href="03_folder.html">폴더권한</a>
+      </li>
+      <li>
+        <a href="04_system.html">시스템로그</a>
+      </li>
+      <li>
+        <a href="05_dashbord.html">대시보드</a>
+      </li>
+      <li>
+        <a href="06_setting.html">환경설정</a>
+      </li>
+      <li class="menu_last">
+        <div class="time">
+          <span>00:00</span>&nbsp;연장
+        </div>
+        <div class="profile_img_wrap">
+          <img src="./images/profile.png">
+        </div>
+        <div  class="mymenu_select_wrap">
+          <div class="mymenu_select">
+            <span>홍길동</span>&nbsp;님
+            <img src="./images/icon_arrow.png">
+          </div>
+          <!-- The Modal -->
+          <div class="mymenu_popup">
+            <!-- Modal content -->
+            <ul class="mymenu-content close">
+              <li class="mymenu">
+                <a href="00-01_password.html">비밀번호변경</a>
+              </li>
+              <hr/>
+              <li class="mymenu">로그아웃</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+
+  <div class="wrap">
+      <div class="content wide">
+        <div class="content_wrap">
+          <div>
+            <h3>서버등록</h3>
+            <ul class="col4" style="margin-bottom:0px;">
+              <li>
+                <ul class="col2 margin_bottom_0">
+                  <li class="form_title star">서버명</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title star">서버타임</li>
+                  <li class="form_info star_select">
+                    <!--20181227 추가 start-->
+                    <div class="selectbox">
+                      <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                      <select id="select01">
+                        <option>선택</option>
+                        <option>선택2</option>
+                      </select>
+                    </div>
+                    <!--20181227 추가 end-->
+                  </li>
+                  <li class="form_title star">하이퍼바이저종류</li>
+                  <li class="form_info star_select">
+                    <!--20181227 추가 start-->
+                    <div class="selectbox">
+                      <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                      <select id="select01">
+                        <option>선택</option>
+                        <option>선택2</option>
+                      </select>
+                    </div>
+                    <!--20181227 추가 end-->
+                  </li>
+                  <li class="form_title">IP ADDRES</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">제조사</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">CPU</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">메모리</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">ADO</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">NIC</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">서버고유ID</li>
+                  <li class="form_info"><span>TEST</span></li>
+                  <li class="form_title">서버그룹</li>
+                  <li class="form_info"><span>&nbsp</span></li>
+                  <li class="form_title">터미널 연결</li>
+                  <li class="form_info"><span>4</span></li>
+                  <li class="form_title">등록일</li>
+                  <li class="form_info"><span>2017-10-24</span></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="col2 margin_bottom_0">
+                  <li class="form_title nbsp">&nbsp;</li>
+                  <li class="form_info">
+                    &nbsp;
+                  </li>
+                  <li class="form_title star">서버상태</li>
+                  <li class="form_info star_select">
+                    <div class="selectbox">
+                      <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                      <select id="select01">
+                        <option>선택1</option>
+                        <option>선택2</option>
+                        <option>선택3</option>
+                        <option>선택4</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="form_title star">호스트명</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">사용포트</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">모델명</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">CPU 갯수</li>
+                  <li class="form_info"><input type="text">&nbsp;&nbsp;개</li>
+                  <li class="form_title">RAM 사이즈</li>
+                  <li class="form_info"><input type="text">&nbsp;&nbsp;GB</li>
+                  <li class="form_title">DVD</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">Video Card</li>
+                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title">메인서버타입</li>
+                  <li class="form_info"><span>Main</span></li>
+                  <li class="form_title">서버구동상태</li>
+                  <li class="form_info"><span>Run</span></li>
+
+                  <li class="form_title nbsp">&nbsp;</li>
+                  <li class="form_info">&nbsp;</li>
+
+                  <li class="form_title">수정일</li>
+                  <li class="form_info"><span>2018-10-11</span></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="col2 server">
+              <li class="form_title">서버상태</li>
+              <li class="form_info">
+                <textarea></textarea>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="button_wrap">
+          <button type="button" class="button_default oper">수정</button>
+          <button type="button" class="button_default blue">저장</button>
+          <button type="button" class="button_default">목록</button>
+        </div>
+      </div>
+  </div>
+<script  src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+  <!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gaea Soft</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1100">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_input.css">
+  <link rel="stylesheet" href="css/style_popup.css">
+  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <ul class="main_menu">
+      <li>
+        <img src="./images/logo.png" alt="로고">
+      </li>
+      <li>
+        <a class="" href="01_group.html">조직도</a>
+      </li>
+      <li>
+        <a href="02_manage.html">사용자 관리</a>
+      </li>
+      <li>
+        <a href="03_folder.html">폴더권한</a>
+      </li>
+      <li>
+        <a href="04_system.html">시스템로그</a>
+      </li>
+      <li>
+        <a href="05_dashbord.html">대시보드</a>
+      </li>
+      <li>
+        <a href="06_setting.html">환경설정</a>
+      </li>
+      <li class="menu_last">
+        <div class="time">
+          <span>00:00</span>&nbsp;연장
+        </div>
+        <div class="profile_img_wrap">
+          <img src="./images/profile.png">
+        </div>
+        <div  class="mymenu_select_wrap">
+          <div class="mymenu_select">
+            <span>홍길동</span>&nbsp;님
+            <img src="./images/icon_arrow.png">
+          </div>
+          <!-- The Modal -->
+          <div class="mymenu_popup">
+            <!-- Modal content -->
+            <ul class="mymenu-content close">
+              <li class="mymenu">
+                <a href="00-01_password.html">비밀번호변경</a>
+              </li>
+              <hr/>
+              <li class="mymenu">로그아웃</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="wrap dashbord">
+      <div class="content wide">
+        <div class="content_wrap border0">
+          <ul class="graph_wrap">
+            <li>
+              <h3 class="graph_title">사용자 접속 현황<span>인원수</span></h3>
+              <div class="graph_content">
+              </div>
+            </li>
+            <li class="marginRight0">
+              <h3 class="graph_title">스토리지 전체 용량<span>사용량</span><span class="gray">남은 용량</span></h3>
+              <div class="graph_content">
+              </div>
+            </li>
+            <li>
+              <h3 class="graph_title">부서 전체 사용량<span>사용량</span><span class="gray">남은 용량</span></h3>
+              <div class="graph_content">
+              </div>
+            </li>
+            <li class="marginRight0">
+              <h3 class="graph_title">사용자 사용량<span>사용량</span><span class="gray">남은 용량</span></h3>
+              <div class="graph_content">
+              </div>
+            </li>
+          </ul>
+        <div class="button_wrap">
+          <button type="button" class="button_default blue width130">새로고침&nbsp;<img class="btn_new" src="./images/new.png" alt="새로고침"></button>
+        </div>
+      </div>
+
+  </div>
+<script  src="js/index.js"></script>
+</body>
+
+</html>

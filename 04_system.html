@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gaea Soft</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1100">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_input.css">
+  <link rel="stylesheet" href="css/style_popup.css">
+  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <ul class="main_menu">
+      <li>
+        <img src="./images/logo.png" alt="로고">
+      </li>
+      <li>
+        <a class="" href="01_group.html">조직도</a>
+      </li>
+      <li>
+        <a href="02_manage.html">사용자 관리</a>
+      </li>
+      <li>
+        <a href="03_folder.html">폴더권한</a>
+      </li>
+      <li>
+        <a href="04_system.html">시스템로그</a>
+      </li>
+      <li>
+        <a href="05_dashbord.html">대시보드</a>
+      </li>
+      <li>
+        <a href="06_setting.html">환경설정</a>
+      </li>
+      <li class="menu_last">
+        <div class="time">
+          <span>00:00</span>&nbsp;연장
+        </div>
+        <div class="profile_img_wrap">
+          <img src="./images/profile.png">
+        </div>
+        <div  class="mymenu_select_wrap">
+          <div class="mymenu_select">
+            <span>홍길동</span>&nbsp;님
+            <img src="./images/icon_arrow.png">
+          </div>
+          <!-- The Modal -->
+          <div class="mymenu_popup">
+            <!-- Modal content -->
+            <ul class="mymenu-content close">
+              <li class="mymenu">
+                <a href="00-01_password.html">비밀번호변경</a>
+              </li>
+              <hr/>
+              <li class="mymenu">로그아웃</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+
+  <div class="wrap">
+      <div class="content wide">
+        <div class="content_wrap">
+          <h3>시스템 로그조회</h3>
+          <div class="user_search_wrap">
+            <div class="user_center">
+              <span>발행일자</span>
+              <input type="text" id="datepicker" class="user">-<!--&nbsp; 20181227 삭제-->
+                <input type="text" id="datepicker2" class="user">&nbsp;&nbsp;
+              <span>처리구분</span>
+              <input type="text" class="user" placeholder="검색어를 입력하세요" style="width:170px;"><!--20181227 수정-->
+              <button type="button" class="user button_default">조회&nbsp;<img src="./images/search_white.png" alt="조회"></button>
+            </div>
+          </div>
+
+
+          <div class="board">
+            <table cellspacing="0" cellpadding="0">
+              <colgroup>
+                <!-- 20181227 수정 start -->
+                <col width="10%"/><!-- 번호 -->
+                <col width="15%"/><!-- 요청ID -->
+                <col width="15%"/><!-- 발행일자 -->
+                <col width="15%"/><!-- 매소드명 -->
+                <col width="15%"/><!-- 처리구분 -->
+                <col width="15%"/><!-- 처리시간 -->
+                <col width="15%"/><!-- 요청자 -->
+                <!-- 20181227 수정 end -->
+              </colgroup>
+              <tr>
+                <th>번호</th>
+                <th>요청ID</th>
+                <th>발생일자</th>
+                <th>메소드명</th>
+                <th>처리구분</th>
+                <th>처리시간</th>
+                <th>요청자</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>admin</td>
+                <td>2018-10-25</td>
+                <td>fkbaibwelkfej</td>
+                <td>조회</td>
+                <td>16:15:30</td>
+                <td>업무담당자</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="pagebtn">
+              <ul>
+                <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png"alt="first_page"></li>
+                <li class="page_cuser"><img src="./images/icon_pagebtn_L.png"alt="left_page"></li>
+                <li class="page_num active">1</li>
+                <li class="page_num">2</li>
+                <li class="page_num">3</li>
+                <li class="page_num">4</li>
+                <li class="page_num">5</li>
+                <li class="page_num">6</li>
+                <li class="page_num">7</li>
+                <li class="page_num">8</li>
+                <li class="page_num">9</li>
+                <li class="page_num">10</li>
+                <li class="page_cuser"><img src="./images/icon_pagebtn_R.png"alt="right_page"></li>
+                <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png"alt="last_page"></li>
+              </ul>
+            </div>
+          </div>
+
+      </div>
+  </div>
+  <script  src="js/index.js"></script>
+</body>
+
+</html>

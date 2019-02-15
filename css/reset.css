@@ -1,0 +1,96 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/* font-size: 100%; */
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, li, table, th, td,  form, address, pre, caption, cite, code, dfn, var { font-style: normal; text-decoration: none; }
+
+
+body {
+  min-width: 320px;word-wrap:break-word;
+  word-break: break-all;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+
+	line-height: 1;
+  font-size: 100%;
+  /* font-family:'myriad-pro','malgun gothic','nanum-squre_R','NanumGothic', 'Dotum', 'Gulim', 'sans-serif'; */
+  -webkit-text-size-adjust:none;
+  word-break:keep-all;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ol,dl,ul,li {
+	list-style: none;
+	height:auto;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  table-layout:fixed;
+}
+
+
+html, body{width:100%; height:100%;}
+
+img,fieldset, frameset, frameborder, frame {border:0;}
+a, img, span, b, input, select, em, textarea, strong{outline-style:none;}
+a,a:hover,a:focus{text-decoration:none; color:inherit;}
+a,button{cursor:pointer;}
+*:focus {outline:none}
+i, em, address { font-style: normal; font-weight: normal; }
+
+textarea::placeholder,textarea:-ms-input-placeholder,
+input::placeholder,input:-ms-input-placeholder {color: #999;} /* Internet Explorer 10-11 */
+button{border: 0;background: none;border: none; cursor: pointer; background-color: transparent; border-radius: 0px; }
+label { cursor: pointer; vertical-align: middle; }
+input, select, textarea, button { color: inherit;
+	/* vertical-align: middle;  */
+	box-sizing: border-box;}
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px #f6f8f9 inset !important; }/*크롬에서 자동완성된 input의 노란색을 지우는  CSS*/
+input,button {border-radius:0;-webkit-appearance:none} /*ios input 초기화*/
+
+textarea{resize: none; overflow-y: auto;}
+textarea,input{/*사파리 브라우저 input 리셋*/
+  border-radius: 0;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}

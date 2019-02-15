@@ -1,0 +1,161 @@
+.col2{//오른쪽에 부서검색 있는 2개 행렬표
+  width: 100%;
+  border-top: solid 2px #8eb5ec;
+  margin: 22px 0 25px;
+  display: inline-block;
+  li{
+    line-height: 64px;
+    -ms-line-height: 61.5px;
+    height: 65px;
+    border-bottom: solid 1px #e6e6e6;
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    padding:0 0 0 2%;
+    &.form_title{
+      width: 14%;
+      //width: 130px;
+      // padding:0 30px;
+      line-height: 64px;
+      font-weight: 100;
+      background:#f7f7f9;
+      border-right: solid 0px #e6e6e6;
+      &.wide_col4_col2_title{
+        width: 7%;
+        padding-left:1.5%;
+      }
+    }
+    &.form_info{
+      width:82%;
+      &.wide_col4_col2_info{
+        width: 86.6%;
+        padding: 0 1.45%;
+      }
+    }
+  }
+  &.log_info>li{
+    line-height: 59px;
+    height: 59px;
+  }
+  &.server{
+    margin-top: 0px;
+    border-top: 0;
+    li{
+      height: 135px;line-height: 132px;
+    }
+    .form_title{
+      width: 7.5%;
+      // width: 7.6% \0/IE8;
+      padding:0 1.5%
+    }
+    .form_info{
+      width: 86.5%;
+      padding:0 1.5%;
+    }
+  }
+}
+
+.col4{ //오른쪽에 부서검색 있는 4개 행렬표
+  overflow: hidden;
+  .col2{
+    width: 50%;
+    float: left;
+    li{
+      &.form_title{
+        width: 17.5%;
+        padding:0 4%;
+      }
+      &:nth-child(2n){
+        width: 278px;
+        padding:0 20px;
+      }
+      &.form_info{
+        width: 70.5%;
+        padding:0 0 0 4%;
+      }
+    }
+    &.margin_bottom_0{margin-bottom:0;}
+  }
+}
+
+.content.wide{//오른쪽에 부서검색 없음
+  width:93.5%;
+  width:-webkit-calc(100% - 90px);
+  width:-moz-calc(100% - 90px);
+  width:calc(100% - 90px);
+  left:0;
+  margin: 45px auto 0px;
+  float: inherit;
+  .col4{
+    .col2{
+      li{
+        &.form_title{
+          width: 18%;
+          padding:0 0 0 3%
+        }
+        &.form_info{
+          width:76%;
+          padding:0 0 0 3%;
+        }
+      }
+    }
+  }
+}
+.star::after{
+  content: "*";
+  color: #4283df;
+  font-size: 16px;
+  padding: 3px;
+  font-weight:600;
+  vertical-align: -2.8px;
+}
+
+@media (max-width:1300px){
+.col2{
+    li{
+      &.form_title{
+        width: 17%;
+        // &.star{
+        //   width: 9.75%;
+        //   padding-left:1.5%;
+        // }
+      }
+      &.form_info{
+        width:79%;
+        // &.star_select{
+        //   width: 83.8%;
+        //   padding: 0 1.45%;
+        // }
+      }
+    }
+    &.server{
+      .form_title{
+        width: 10.3%;
+        padding:0 1.5%;
+      }
+      .form_info{
+        width: 82.7%;
+      }
+    }
+  }
+  .content.wide{
+    .col4{
+      .col2{
+        li{
+          &.form_title{
+            width: 20.5%;
+            padding:0 3%;
+          }
+          &.wide_col4_col2_title{
+            width: 10.25%;
+            padding-left:1.5%;
+          }
+          &.form_info{
+            width:70.5%;
+            padding:0 0 0 3%;
+          }
+        }
+      }
+    }
+  }
+}
