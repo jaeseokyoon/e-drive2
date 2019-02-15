@@ -1,6 +1,6 @@
 
 input,.selectbox{
-  width:280px;
+  width:260px;
   height:40px;
   font-size:14px;
   border:1px solid #ccc;
@@ -8,7 +8,7 @@ input,.selectbox{
 }
 
 input{
-  padding:0 15px;
+  padding:0 0 0 10px;
   line-height: 35px;
 }
 .selectbox{
@@ -69,15 +69,14 @@ input[type="text"].user,input[type="file"].user{height:36px;}
 
 input[type="tel"],
 .num_tel{
-  width: 82.5px;
   vertical-align: 1px;
   /* float: left; */
   /* margin-top: 11px; */
 }
+input[type="tel"],
+.num_tel,
 .num>.selectbox{
-  width: 82.5px;
-  /* float: left; */
-  /* margin-top: 11px; */
+  width: 75px;
 }
 .num>div+span,.num>input+span{vertical-align: 2px;}
 ::-ms-clear {display: none;}
@@ -211,7 +210,7 @@ input[type="text"].user.hasDatepicker{
 .department>input[type="file"]{
     margin: 0;
     /* width: calc(278px - 124px); */
-    width: 188px;
+    width: 168px;
 }
 
 
