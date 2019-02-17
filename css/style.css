@@ -119,7 +119,7 @@ clear:both;
 }
 .main_menu>li{
   display: inline-block;
-  margin: 35px 1.3% 25px;
+  margin: 35px 1.2% 25px;
   float: left;
 }
 .menu_last{
@@ -408,7 +408,7 @@ h3>.user_root{
   padding:0 10px;
   border-bottom:solid 1px #e6e6e6;
   font-size:14px;
-  padding:0 30px;
+  /* padding:0 30px; */
   vertical-align: middle;
 }
 .board th{height:66px;background: #f7f7f9;}
@@ -536,7 +536,7 @@ button[type="submit"].user{
   position: relative;
   width:100%;
   font-size: 14px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .search>input{
   width:100%;
