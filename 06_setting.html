@@ -21,7 +21,7 @@
         <img src="./images/logo.png" alt="로고">
       </li>
       <li>
-        <a class="" href="01_group.html">조직도</a>
+        <a href="01_group.html">조직도</a>
       </li>
       <li>
         <a href="02_manage.html">사용자 관리</a>
@@ -36,7 +36,7 @@
         <a href="05_dashbord.html">대시보드</a>
       </li>
       <li>
-        <a href="06_setting.html">환경설정</a>
+        <a class="active" href="06_setting.html">환경설정</a>
       </li>
       <li class="menu_last">
         <div class="time">
@@ -74,27 +74,29 @@
             <ul class="col4" style="margin-bottom:0px;">
               <li>
                 <ul class="col2 margin_bottom_0">
-                  <li class="form_title star">서버명</li>
+                  <li class="form_title">서버명<span class="star">*</span></li>
                   <li class="form_info"><input type="text"></li>
-                  <li class="form_title star">서버타임</li>
+                  <li class="form_title">서버타임<span class="star">*</span></li>
                   <li class="form_info star_select">
                     <!--20181227 추가 start-->
                     <div class="selectbox">
                       <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
                       <select id="select01">
-                        <option>선택</option>
+                        <option>선택해주세요.</option>
+                        <option>선택1</option>
                         <option>선택2</option>
                       </select>
                     </div>
                     <!--20181227 추가 end-->
                   </li>
-                  <li class="form_title star">하이퍼바이저종류</li>
+                  <li class="form_title" style="letter-spacing:-2px;">하이퍼바이저종류<span class="star">*</span></li>
                   <li class="form_info star_select">
                     <!--20181227 추가 start-->
                     <div class="selectbox">
                       <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
                       <select id="select01">
-                        <option>선택</option>
+                        <option>선택해주세요.</option>
+                        <option>선택1</option>
                         <option>선택2</option>
                       </select>
                     </div>
@@ -128,11 +130,12 @@
                   <li class="form_info">
                     &nbsp;
                   </li>
-                  <li class="form_title star">서버상태</li>
+                  <li class="form_title">서버상태<span class="star">*</span></li>
                   <li class="form_info star_select">
                     <div class="selectbox">
                       <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
                       <select id="select01">
+                        <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
                         <option>선택3</option>
@@ -140,7 +143,7 @@
                       </select>
                     </div>
                   </li>
-                  <li class="form_title star">호스트명</li>
+                  <li class="form_title">호스트명<span class="star">*</span></li>
                   <li class="form_info"><input type="text"></li>
                   <li class="form_title">사용포트</li>
                   <li class="form_info"><input type="text"></li>

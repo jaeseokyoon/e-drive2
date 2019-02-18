@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.bpopup.min.js"></script>
 
 <!--zTree tree.html에서 가져온 파일 start-->
   <script type="text/javascript" src="./ztree/js/html5shiv.min.js"></script>
@@ -24,7 +25,7 @@
   <script type="text/javascript" src="./ztree/js/jquery.ztree.core.js"></script>
   <script type="text/javascript" src="./ztree/js/jquery.ztree.exhide.js"></script>
   <script type="text/javascript" src="./ztree/js/jquery.ztree.exedit.js"></script>
-  <script type="text/javascript" src="./ztree/js/main.js"></script><!-- main.js 자바스크립트  -->
+  <script type="text/javascript" src="./ztree/js/main.js"></script>
   <script type="text/javaScript" >
     var treeData =[{"isParent":"true","name":"협력직원","pId":"dept0001","linkType":"D","id":"dept0005"},{"isParent":"true","name":"지어소프트","pId":"dept0000","linkType":"D","id":"dept0001","open":"true"},{"isParent":"true","name":"IT서비스부문","pId":"dept0001","linkType":"D","id":"dept0002"},{"isParent":"true","name":"대표이사","pId":"dept0002","linkType":"D","id":"dept0006"},{"isParent":"true","name":"임원","pId":"dept0002","linkType":"D","id":"dept0007"},{"isParent":"true","name":"IT서비스부문장","pId":"dept0007","linkType":"D","id":"dept0019"},{"isParent":"true","name":"재무기획실","pId":"dept0002","linkType":"D","id":"dept0008"},{"isParent":"true","name":"사업전략본부","pId":"dept0002","linkType":"D","id":"dept0009"},{"isParent":"true","name":"재무기획실","pId":"dept0008","linkType":"D","id":"dept0020"},{"isParent":"true","name":"재무팀","pId":"dept0008","linkType":"D","id":"dept0021"},{"isParent":"true","name":"비즈니스기술연구소","pId":"dept0009","linkType":"D","id":"dept0022"},{"isParent":"true","name":"세종사업TF팀","pId":"dept0009","linkType":"D","id":"dept0023"},{"isParent":"true","name":"연구개발실","pId":"dept0022","linkType":"D","id":"dept0040"},{"isParent":"true","name":"정보보호TF팀","pId":"dept0022","linkType":"D","id":"dept0041"},{"isParent":"true","name":"테스트부서","pId":"dept0040","linkType":"D","id":"dept0101"},{"isParent":"true","name":"공공사업팀","pId":"dept0009","linkType":"D","id":"dept0024"},{"isParent":"true","name":"신규부서","pId":"dept0009","linkType":"D","id":"dept0111"},{"isParent":"true","name":"이커머스부문","pId":"dept0001","linkType":"D","id":"dept0004"},{"isParent":"true","name":"인터넷비즈니스본부","pId":"dept0002","linkType":"D","id":"dept0010"},{"isParent":"true","name":"마케팅사업팀","pId":"dept0010","linkType":"D","id":"dept0025"},{"isParent":"true","name":"전략기획팀","pId":"dept0010","linkType":"D","id":"dept0026"},{"isParent":"true","name":"SD본부","pId":"dept0002","linkType":"D","id":"dept0011"},{"isParent":"true","name":"인프라사업팀","pId":"dept0011","linkType":"D","id":"dept0027"},{"isParent":"true","name":"오픈서비스사업팀","pId":"dept0011","linkType":"D","id":"dept0028"},{"isParent":"true","name":"지능형플랫폼사업팀","pId":"dept0011","linkType":"D","id":"dept0029"},{"isParent":"true","name":"시스템사업팀","pId":"dept0011","linkType":"D","id":"dept0030"},{"isParent":"true","name":"사업지원실","pId":"dept0002","linkType":"D","id":"dept0012"},{"isParent":"true","name":"IB지원실","pId":"dept0002","linkType":"D","id":"dept0013"},{"isParent":"true","name":"광고사업부문","pId":"dept0001","linkType":"D","id":"dept0003"},{"isParent":"true","name":"기업사업TF팀","pId":"dept0002","linkType":"D","id":"dept0014"},{"isParent":"true","name":"기획본부","pId":"dept0003","linkType":"D","id":"dept0015"},{"isParent":"true","name":"기획1국","pId":"dept0015","linkType":"D","id":"dept0031"},{"isParent":"true","name":"제작본부","pId":"dept0003","linkType":"D","id":"dept0016"},{"isParent":"true","name":"기획2국","pId":"dept0015","linkType":"D","id":"dept0032"},{"isParent":"true","name":"디자인1팀","pId":"dept0016","linkType":"D","id":"dept0033"},{"isParent":"true","name":"디자인2팀","pId":"dept0016","linkType":"D","id":"dept0034"},{"isParent":"true","name":"웹기획팀","pId":"dept0016","linkType":"D","id":"dept0035"},{"isParent":"true","name":"영상컨텐츠팀","pId":"dept0016","linkType":"D","id":"dept0036"},{"isParent":"true","name":"이커머스부문","pId":"dept0004","linkType":"D","id":"dept0017"},{"isParent":"true","name":"검색마케팅","pId":"dept0004","linkType":"D","id":"dept0018"},{"isParent":"true","name":"검색1팀","pId":"dept0018","linkType":"D","id":"dept0038"},{"isParent":"true","name":"검색2팀","pId":"dept0018","linkType":"D","id":"dept0039"},{"isParent":"true","name":"이커머스팀","pId":"dept0004","linkType":"D","id":"dept0037"},{"isParent":"false","name":"오형돈","pId":"dept0006","linkType":"U","id":"hdoh"},{"isParent":"false","name":"박승준","pId":"dept0006","linkType":"U","id":"spark"},{"isParent":"false","name":"송은지","pId":"dept0014","linkType":"U","id":"nabi"},{"isParent":"false","name":"김종현","pId":"dept0014","linkType":"U","id":"kseraph"},{"isParent":"false","name":"장미화","pId":"dept0012","linkType":"U","id":"bika"},{"isParent":"false","name":"이해민","pId":"dept0012","linkType":"U","id":"dev2010"},{"isParent":"false","name":"신은주","pId":"dept0012","linkType":"U","id":"ej-zzim"},{"isParent":"false","name":"강형택","pId":"dept0012","linkType":"U","id":"kang2322"},{"isParent":"false","name":"이명희","pId":"dept0012","linkType":"U","id":"lmh88"},{"isParent":"false","name":"윤재석","pId":"dept0012","linkType":"U","id":"jsriyun"},{"isParent":"false","name":"우연진","pId":"dept0012","linkType":"U","id":"w0127"},{"isParent":"false","name":"윤현중","pId":"dept0012","linkType":"U","id":"guswnd1592"},{"isParent":"false","name":"김동호","pId":"dept0012","linkType":"U","id":"jeid"},{"isParent":"false","name":"안희은","pId":"dept0012","linkType":"U","id":"happysilver"},{"isParent":"false","name":"김우현","pId":"dept0013","linkType":"U","id":"whkim"},{"isParent":"false","name":"임은경","pId":"dept0013","linkType":"U","id":"yapstory"},{"isParent":"false","name":"정주윤","pId":"dept0013","linkType":"U","id":"jyjung"},{"isParent":"false","name":"권정은","pId":"dept0013","linkType":"U","id":"alice"},{"isParent":"false","name":"정경천","pId":"dept0022","linkType":"U","id":"kcjung"},{"isParent":"false","name":"채수용","pId":"dept0022","linkType":"U","id":"csy9875"},{"isParent":"false","name":"유인식","pId":"dept0022","linkType":"U","id":"insikyoo"},{"isParent":"false","name":"최상우","pId":"dept0022","linkType":"U","id":"csw2514"},{"isParent":"false","name":"안대준","pId":"dept0022","linkType":"U","id":"daejunan"},{"isParent":"false","name":"임혜안","pId":"dept0022","linkType":"U","id":"s750"},{"isParent":"false","name":"이수연","pId":"dept0022","linkType":"U","id":"sylee"},{"isParent":"false","name":"김성근","pId":"dept0022","linkType":"U","id":"tjdrms"},{"isParent":"false","name":"류동승","pId":"dept0023","linkType":"U","id":"ryupe"},{"isParent":"false","name":"김정준","pId":"dept0023","linkType":"U","id":"jjkim"},{"isParent":"false","name":"손창훈","pId":"dept0023","linkType":"U","id":"chson"},{"isParent":"false","name":"최원규","pId":"dept0023","linkType":"U","id":"silver4864"},{"isParent":"false","name":"이대근","pId":"dept0023","linkType":"U","id":"ssamgu1"},{"isParent":"false","name":"박경채","pId":"dept0024","linkType":"U","id":"pkchae"},{"isParent":"false","name":"안찬용","pId":"dept0024","linkType":"U","id":"cyan"},{"isParent":"false","name":"이병철","pId":"dept0024","linkType":"U","id":"lbc00"},{"isParent":"false","name":"이선아","pId":"dept0024","linkType":"U","id":"salee"},{"isParent":"false","name":"한문경","pId":"dept0010","linkType":"U","id":"ucbchem"},{"isParent":"false","name":"황호찬","pId":"dept0010","linkType":"U","id":"stranger"},{"isParent":"false","name":"최원석","pId":"dept0025","linkType":"U","id":"cwsbilly"},{"isParent":"false","name":"최에셀","pId":"dept0025","linkType":"U","id":"ehsel"},{"isParent":"false","name":"우정섭","pId":"dept0025","linkType":"U","id":"jslilac"},{"isParent":"false","name":"김나연","pId":"dept0025","linkType":"U","id":"verenayeon"},{"isParent":"false","name":"홍효진","pId":"dept0025","linkType":"U","id":"soundsgood"},{"isParent":"false","name":"강승훈","pId":"dept0025","linkType":"U","id":"get4455"},{"isParent":"false","name":"장재호","pId":"dept0025","linkType":"U","id":"woghwoghd"},{"isParent":"false","name":"도은경","pId":"dept0026","linkType":"U","id":"eun1112"},{"isParent":"false","name":"박병호","pId":"dept0026","linkType":"U","id":"cine119"},{"isParent":"false","name":"이경훈","pId":"dept0026","linkType":"U","id":"doa4004"},{"isParent":"false","name":"신태하","pId":"dept0026","linkType":"U","id":"dredre"},{"isParent":"false","name":"이예섭","pId":"dept0026","linkType":"U","id":"plansub"},{"isParent":"false","name":"강창훈","pId":"dept0011","linkType":"U","id":"chkang"},{"isParent":"false","name":"최환수","pId":"dept0011","linkType":"U","id":"todreamkr"},{"isParent":"false","name":"문효석","pId":"dept0029","linkType":"U","id":"moon"},{"isParent":"false","name":"한유성","pId":"dept0029","linkType":"U","id":"hys"},{"isParent":"false","name":"소동준","pId":"dept0029","linkType":"U","id":"djso"},{"isParent":"false","name":"김정희","pId":"dept0029","linkType":"U","id":"grrring"},{"isParent":"false","name":"김주원","pId":"dept0029","linkType":"U","id":"asherkim"},{"isParent":"false","name":"한좌민","pId":"dept0029","linkType":"U","id":"jwamin"},{"isParent":"false","name":"유지은","pId":"dept0029","linkType":"U","id":"jeyoo"},{"isParent":"false","name":"하성진","pId":"dept0029","linkType":"U","id":"jini1492"},{"isParent":"false","name":"김희정","pId":"dept0029","linkType":"U","id":"kimhj"},{"isParent":"false","name":"김명선","pId":"dept0029","linkType":"U","id":"kmssskk"},{"isParent":"false","name":"강형석","pId":"dept0030","linkType":"U","id":"i3030"},{"isParent":"false","name":"장석훈","pId":"dept0030","linkType":"U","id":"seock19761"},{"isParent":"false","name":"이창구","pId":"dept0030","linkType":"U","id":"cglee"},{"isParent":"false","name":"이상진","pId":"dept0030","linkType":"U","id":"sjlee1009"},{"isParent":"false","name":"박종남","pId":"dept0027","linkType":"U","id":"redhawk155"},{"isParent":"false","name":"김성환","pId":"dept0027","linkType":"U","id":"kshw0620"},{"isParent":"false","name":"김현우","pId":"dept0027","linkType":"U","id":"zer0boy"},{"isParent":"false","name":"정필섭","pId":"dept0027","linkType":"U","id":"psjeong"},{"isParent":"false","name":"윤대영","pId":"dept0027","linkType":"U","id":"pray0826"},{"isParent":"false","name":"이정섭","pId":"dept0027","linkType":"U","id":"momomo808"},{"isParent":"false","name":"이대현","pId":"dept0028","linkType":"U","id":"dhlee"},{"isParent":"false","name":"양승은","pId":"dept0028","linkType":"U","id":"ksyang7"},{"isParent":"false","name":"이효성","pId":"dept0028","linkType":"U","id":"hslee"},{"isParent":"false","name":"이영제","pId":"dept0028","linkType":"U","id":"yabigom"},{"isParent":"false","name":"노승민","pId":"dept0028","linkType":"U","id":"shtmdals"},{"isParent":"false","name":"김부승","pId":"dept0028","linkType":"U","id":"kbs92"},{"isParent":"false","name":"이다솔","pId":"dept0028","linkType":"U","id":"leeds1204"},{"isParent":"false","name":"김영준","pId":"dept0008","linkType":"U","id":"lskyjk"},{"isParent":"false","name":"안준형","pId":"dept0008","linkType":"U","id":"jhahn"},{"isParent":"false","name":"한아름","pId":"dept0008","linkType":"U","id":"may1194"},{"isParent":"false","name":"양윤희","pId":"dept0021","linkType":"U","id":"yyh"},{"isParent":"false","name":"이현영","pId":"dept0021","linkType":"U","id":"b2053lhy"},{"isParent":"false","name":"이현아","pId":"dept0021","linkType":"U","id":"lha"},{"isParent":"false","name":"김사랑","pId":"dept0021","linkType":"U","id":"srkim"},{"isParent":"false","name":"유저1","pId":"dept1","linkType":"U","id":"user1"},{"isParent":"false","name":"주익성","pId":"dept0040","linkType":"U","id":"jooikseong"},{"isParent":"false","name":"장우성","pId":"dept0022","linkType":"U","id":"guseo6982"},{"isParent":"false","name":"이선표","pId":"dept0009","linkType":"U","id":"splee"}];
   </script>
@@ -89,7 +90,7 @@
       <button type="button" class="button_board" id="myBtn1">업무조직</button>
 
       <!-- The Modal -->
-      <div id="myModal1"  class="modal">
+      <div id="myModal1" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content com">
 
@@ -121,8 +122,8 @@
             </div-->
             <!--트리 end-->
           <div class="button_wrap popup">
-            <button type="button" class="button_default blue">신청</button>
-            <button type="button" class="button_default close1_1">취소</button>
+            <button type="button" class="button_default blue b-close">신청</button>
+            <button type="button" class="button_default close1_1 b-close">취소</button>
           </div>
         </div>
       </div>
@@ -132,11 +133,11 @@
       <!-- Trigger/Open The Modal -->
       <button type="button" ID="myBtn2" class="button_board">폴더권한2</button>
       <!-- The Modal -->
-      <div id="myModal2" class="modal">
+      <div id="myModal2" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content folder02">
 
-          <h3 class="title">폴더 권한 목록</h3><span class="close2">&nbsp;</span>
+          <h3 class="title">폴더 권한 목록</h3><span class="close2 b-close">&nbsp;</span>
 
             <div class="wrap_popup_tree">
               <h3 class="sub_title">폴더 정보</h3>
@@ -173,13 +174,12 @@
                       <th>권한</th>
                       <th>삭제</th>
                     </tr>
-                    <!--20181227 selectbox 수정 start-->
                     <tr>
                       <td>부서ID</td>
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -197,7 +197,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -215,7 +215,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -233,7 +233,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -251,7 +251,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -269,7 +269,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -287,7 +287,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -305,7 +305,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -323,7 +323,7 @@
                       <td>
                         <div class="folder02_selsect">
                           <div class="selectbox">
-                            <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                            <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
                               <option>선택</option>
                               <option>선택2</option>
@@ -335,29 +335,15 @@
                         <span class="box_close">×</span>
                       </td>
                     </tr>
-                    <!--20181227 selectbox 수정 end-->
                   </table>
-                  <!--div class="pagebtn">
-                    <ul>
-                      <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png"alt="first_page"></li>
-                      <li class="page_cuser"><img src="./images/icon_pagebtn_L.png"alt="left_page"></li>
-                      <li class="page_num active">1</li>
-                      <li class="page_num">2</li>
-                      <li class="page_num">3</li>
-                      <li class="page_num">4</li>
-                      <li class="page_num">5</li>
-                      <li class="page_cuser"><img src="./images/icon_pagebtn_R.png"alt="right_page"></li>
-                      <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png"alt="last_page"></li>
-                    </ul>
-                  </div-->
                 </form>
               </div>
 
             </div>
           </div>
           <div class="button_wrap popup">
-            <button type="button" class="button_default blue">신청</button>
-            <button type="button" class="button_default close2_1">취소</button>
+            <button type="button" class="button_default blue b-close">신청</button>
+            <button type="button" class="button_default close2_1 b-close">취소</button>
           </div>
 
         </div>
@@ -366,15 +352,12 @@
 
 
       <!--폴더권한 팝업 start-->
-      <!-- Trigger/Open The Modal -->
       <button type="button" ID="myBtn3" class="button_board autho">폴더권한</button>
 
-      <!-- The Modal -->
-      <div id="myModal3" class="modal autho">
-        <!-- Modal content -->
+      <div id="myModal3" style="display:none;">
         <div class="modal-content">
 
-          <h3 class="title">폴더 권한 목록</h3><span class="close3">&nbsp;</span>
+          <h3 class="title">폴더 권한 목록</h3><span class="close3 b-close">&nbsp;</span>
 
           <div class="wrap_popup_tree">
             <h3 class="sub_title">폴더 정보</h3>
@@ -416,15 +399,15 @@
                 </table>
                 <div class="pagebtn">
                   <ul>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png"alt="first_page"></li>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_L.png"alt="left_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png" alt="first_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_L.png" alt="left_page"></li>
                     <li class="page_num active">1</li>
                     <li class="page_num">2</li>
                     <li class="page_num">3</li>
                     <li class="page_num">4</li>
                     <li class="page_num">5</li>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_R.png"alt="right_page"></li>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png"alt="last_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_R.png" alt="right_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png" alt="last_page"></li>
                   </ul>
                 </div>
               </div>
@@ -432,6 +415,11 @@
               <h3>권한 정보</h3>
               <div class="board popup text_left">
                 <table cellspacing="0" cellpadding="0">
+                  <colgroup>
+                    <col width=""/><!-- 리스트 -->
+                    <col width="20%"/><!-- 허용 -->
+                    <col width="20%"/><!-- 거부 -->
+                  </colgroup>
                   <tr>
                     <th>&nbsp;</th>
                     <th>허용</th>
@@ -515,15 +503,15 @@
                 </table>
                 <div class="pagebtn">
                   <ul>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png"alt="first_page"></li>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_L.png"alt="left_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png" alt="first_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_L.png" alt="left_page"></li>
                     <li class="page_num2 active">1</li>
                     <li class="page_num2">2</li>
                     <li class="page_num2">3</li>
                     <li class="page_num2">4</li>
                     <li class="page_num2">5</li>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_R.png"alt="right_page"></li>
-                    <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png"alt="last_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_R.png" alt="right_page"></li>
+                    <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png" alt="last_page"></li>
                   </ul>
                 </div>
               </div>
@@ -531,8 +519,8 @@
             </div>
           </div>
           <div class="button_wrap popup">
-            <button type="button" class="button_default blue">신청</button>
-            <button type="button" class="button_default close3_1">취소</button>
+            <button type="button" class="button_default blue b-close">신청</button>
+            <button type="button" class="button_default close3_1 b-close">취소</button>
           </div>
 
         </div>
@@ -545,7 +533,7 @@
       <button type="button" class="button_board" id="myBtn4">타이틀</button>
 
       <!-- The Modal -->
-      <div id="myModal4"  class="modal">
+      <div id="myModal4" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content com title_pop">
 
@@ -572,7 +560,7 @@
               <div class="title_select">
                 <!--20181227 추가 start-->
                 <div class="selectbox">
-                  <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
+                  <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                   <select id="select01">
                     <option>선택</option>
                     <option>선택2</option>
@@ -583,8 +571,8 @@
           </div>
 
           <div class="button_wrap popup_title">
-            <button type="button" class="button_default blue">신청</button>
-            <button type="button" class="button_default close4_1">취소</button>
+            <button type="button" class="button_default blue b-close">신청</button>
+            <button type="button" class="button_default close4_1 b-close">취소</button>
           </div>
         </div>
       </div>
@@ -595,7 +583,7 @@
       <button type="button" class="button_board" id="myBtn5">File Upload</button>
 
       <!-- The Modal -->
-      <div id="myModal5"  class="modal">
+      <div id="myModal5" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content file_upload"  style="height:385px;">
 
@@ -622,8 +610,8 @@
             </p>
           </div>
           <div class="button_wrap popup">
-            <button type="button" class="button_default blue">저장</button>
-            <button type="button" class="button_default close5_1">취소</button>
+            <button type="button" class="button_default blue b-close">저장</button>
+            <button type="button" class="button_default close5_1 b-close">취소</button>
           </div>
         </div>
       </div>
@@ -634,7 +622,7 @@
       <button type="button" class="button_board" id="myBtn6">시간연장</button>
 
       <!-- The Modal -->
-      <div id="myModal6"  class="modal">
+      <div id="myModal6" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content delay">
 
@@ -657,8 +645,8 @@
           </div>
 
           <div class="button_wrap popup">
-            <button type="button" class="button_default blue width160">로그인 시간 연장</button>
-            <button type="button" class="button_default close6_1 ">취소</button>
+            <button type="button" class="button_default blue width160 b-close">로그인 시간 연장</button>
+            <button type="button" class="button_default close6_1 b-close ">취소</button>
           </div>
         </div>
       </div>
@@ -669,7 +657,7 @@
       <button type="button" class="button_board" id="myBtn7">폴더 생성</button>
 
       <!-- The Modal -->
-      <div id="myModal7"  class="modal">
+      <div id="myModal7" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content file_upload">
 
@@ -690,8 +678,8 @@
             </li>
           </ul>
           <div class="button_wrap popup">
-            <button type="button" class="button_default blue">저장</button>
-            <button type="button" class="button_default close7_1">취소</button>
+            <button type="button" class="button_default blue b-close">저장</button>
+            <button type="button" class="button_default close7_1 b-close">취소</button>
           </div>
         </div>
       </div>
@@ -702,7 +690,7 @@
       <button type="button" class="button_board" id="myBtn8">문서이력조회</button>
 
       <!-- The Modal -->
-      <div id="myModal8"  class="modal">
+      <div id="myModal8" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content file_info">
 
@@ -730,37 +718,11 @@
                   <td>취소</td>
                 </tr>
               </table>
-              <!--div class="pagebtn">
-                <ul>
-                  <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png"alt="first_page"></li>
-                  <li class="page_cuser"><img src="./images/icon_pagebtn_L.png"alt="left_page"></li>
-                  <li class="page_num active">1</li>
-                  <li class="page_num">2</li>
-                  <li class="page_num">3</li>
-                  <li class="page_num">4</li>
-                  <li class="page_num">5</li>
-                  <li class="page_cuser"><img src="./images/icon_pagebtn_R.png"alt="right_page"></li>
-                  <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png"alt="last_page"></li>
-                </ul>
-              </div-->
             </div>
           </div>
-          <!--ul class="user_search_wrap fileBox">
-            <li class="file_route">
-              경로
-            </li>
-            <li class="file_route">
-              <span>folder/index.html</span>
-            </li>
-            <li>
-              폴더명
-            </li>
-            <li>
-            <input type="text" class="user fileName" placeholder="폴더명을 입력해주세요.">
-            </li>
-          </ul-->
+
           <div class="button_wrap popup">
-            <button type="button" class="button_default close8_1">닫기</button>
+            <button type="button" class="button_default close8_1 b-close">닫기</button>
           </div>
         </div>
       </div>
@@ -771,7 +733,7 @@
       <button type="button" class="button_board" id="myBtn9">알림</button>
 
       <!-- The Modal -->
-      <div id="myModal9"  class="modal">
+      <div id="myModal9" style="display:none;">
         <!-- Modal content -->
         <div class="modal-content file_upload popup_notice">
 
@@ -779,56 +741,17 @@
 
           <div class="user_search_wrap fileBox popup_notice">
             <p>
-              시스템에 등록되지 않은 아이디이거나, 아이디 또는</br>
+              시스템에 등록되지 않은 아이디이거나, 아이디 또는<br/>
               비밀번호를 잘못 입력하셨습니다.
             </p>
           </div>
           <div class="button_wrap popup">
-            <button type="button" class="button_default blue">확인</button>
-            <button type="button" class="button_default close9_1">취소</button>
+            <button type="button" class="button_default blue b-close">확인</button>
+            <button type="button" class="button_default close9_1 b-close">취소</button>
           </div>
         </div>
       </div>
       <!--알림 팝업 end-->
-
-      <div class="swal-modal" role="dialog" aria-modal="true">
-        <div class="swal-title" style="">알림</div>
-        <div class="swal-text" style="">[apiadmin1] 유저가 존재하지 않습니다.</div>
-
-        <!--div class="swal-footer">
-          <div class="swal-button-container">
-            <button class="swal-button swal-button--confirm">OK</button>
-            <div class="swal-button__loader">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div-->
-        <div class="swal-footer">
-          <div class="swal-button-container">
-            <button class="swal-button swal-button--confirm">확인</button>
-            <div class="swal-button__loader">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-          <div class="swal-button-container">
-            <button class="swal-button swal-button--cancel">취소</button>
-            <div class="swal-button__loader">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
 
 
 

@@ -9,19 +9,23 @@ input,.selectbox{
 
 input{
   padding:0 10px;
-  line-height: 35px;
+  line-height: normal;
+  line-height: 35px \0/IE8;
+}
+input::-webkit-input-placeholder{
+  line-height: 22px;
 }
 .selectbox{
   display: inline-block;
   position: relative;
   vertical-align: -14px;
-  vertical-align: -15.5px \0/IE8;
   line-height: 39px;
 }
-.num .selectbox{
+
+/* .num .selectbox{
   vertical-align: -13px;
   vertical-align: -14.5px \0/IE8;
-}
+} */
 .title_select>.selectbox{
   width: 200px;
   height: 38px;
@@ -69,14 +73,20 @@ input[type="text"].user,input[type="file"].user{height:36px;}
 
 input[type="tel"],
 .num_tel{
-  vertical-align: 1px;
+  /* vertical-align: 1px; */
   /* float: left; */
   /* margin-top: 11px; */
+}
+@media \0screen {
+  input[type="tel"],
+  .num_tel{
+    vertical-align: 2px;
+  }
 }
 input[type="tel"],
 .num_tel,
 .num>.selectbox{
-  width: 75px;
+  width: 76px;
 }
 .num>div+span,.num>input+span{vertical-align: 2px;}
 ::-ms-clear {display: none;}
@@ -194,10 +204,14 @@ input[type="file"].user{
   display: inline-block;
   width: 350px;
   height: 40px;
+  vertical-align: -0.5px \0/ie8;
 }
 /*ie핵*/
-@media screen and (min-width:0\0){input[type="text"].user,
-input[type="file"].user{height:40px;}}
+@media \0screen {
+  input[type="text"].user{
+    vertical-align: 1.5px;
+  }
+}
 
 .user_center>span:last-child{margin-left: 10px}
 input[type="text"].user.hasDatepicker{
@@ -211,9 +225,13 @@ input[type="text"].user.hasDatepicker{
 .department>input[type="file"]{
     margin: 0;
     /* width: calc(278px - 124px); */
-    width: 168px;
+    width: 169px;
 }
-
+@media \0screen {
+  .department>input[type="text"]{
+    vertical-align: 1.5px;
+  }
+}
 
 
 .col2.server textarea{
@@ -317,6 +335,16 @@ input[type="text"].user.hasDatepicker{
       letter-spacing: -0.5px;
       color: #d3d3d3;
     }
+
+@media (max-width:1300px){
+  input,.selectbox{
+    width: 169px;
+  }
+  .input_impo {
+    letter-spacing: -1.8px;
+  }
+}
+
   /* @media (max-width:1450px){
     .num > .selectbox,
     input[type="tel"],

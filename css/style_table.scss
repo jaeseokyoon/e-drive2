@@ -101,7 +101,8 @@
     }
   }
 }
-.star::after{
+// .star::after,
+.star{
   content: "*";
   color: #4283df;
   font-size: 16px;
