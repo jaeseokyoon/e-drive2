@@ -2,16 +2,16 @@
 
 
 .modal,#layer_popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    top: 0 !important;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
 }
 /*모달팝업 start*/
 /* Modal Content/Box */
@@ -37,8 +37,6 @@
 .modal-content.title_pop>.title,
 #myModal1 .title{margin-bottom: 24px;}
 .modal-content.com{height:657px;}
-/*.modal-content.com>.title{
-margin-bottom: 25px;}*/
 .modal-content.com>.menu.popup{
   width:258px;
   height:340px;
@@ -49,7 +47,7 @@ margin-bottom: 25px;}*/
 }
 
 .wrap_popup_tree{
-  width: 300px;/* 20181226 추가*/
+  width: 300px;
   float:left;
   margin: 0 20px;
   position: relative;
@@ -58,7 +56,7 @@ margin-bottom: 25px;}*/
 .wrap_popup_tree>.btn_plus{
   position: absolute;
   right: 0px;
-  top: -9px;/*20181227 수정*/
+  top: -9px;
   font-size: 14px;
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
@@ -80,32 +78,18 @@ margin-bottom: 25px;}*/
     width: 280px;
     height: 39px;
     margin-bottom: 0;
-    /*line-height: 64px;*/
     padding:15px;
     border-color: #ebebeb;
   }
 .modal-content input[type="text"].user,
 .modal-content input[type="file"].user{
-  width: 172px;/*20181227 수정*/
-  height: 37px;/*20181227 수정*/
+  width: 172px;
+  height: 37px;
   margin: 0 8px 0 0 !important;
   line-height: normal;
   float: left;
   padding: 0 15px;
 }
-/*ie핵*/
-/* @media screen and (min-width:0\0){.modal-content input[type="text"].user{
-  width: 140px; height:35px;}}
-  @media screen and (min-width:0\0){.modal-content input[type="file"].user{
-    width: 140px; height:35px;}}
-html>body .modal-content input.user{
-  height:36px;
-  width: 170px;
-  margin: 0 8px 0 0 !important;
-  line-height: normal;
-  float: left;
-  background-image:  none;
-} *//*20181227 삭제*/
 
 .modal-content button[type="button"].user,
 .modal-content button[type="submit"].user{
@@ -125,10 +109,10 @@ html>body .modal-content input.user{
 }
 .modal-content.file_upload>.user_search_wrap.popup_notice{
   border: 0;
-  width:78%;/*20181227 추가*/
-  width:-webkit-calc(100% - 96px);/*20181227 수정*/
-  width:-moz-calc(100% - 96px);/*20181227 추가*/
-  width:calc(100% - 96px);/*20181227 추가*/
+  width:78%;
+  width:-webkit-calc(100% - 96px);
+  width:-moz-calc(100% - 96px);
+  width:calc(100% - 96px);
   text-align: left;
   margin: 0 auto;
   font-size: 13.5px;
@@ -197,12 +181,11 @@ html>body .modal-content input.user{
 }
 .content.popup{
   width: 440px;
-  /* margin-left: 341px;
-  margin-top: -19px; */
   margin:0;
   min-height: auto;
   height: auto;
   display: inline-block;
+  padding:0;
 }
 @media screen and (min-width:0\0){.content.popup{min-height:auto;}}
 
@@ -265,11 +248,11 @@ html>body .modal-content input.user{
 }
 .title_select>select,
 .modal-content>.title_pop_wrap>input[type="text"]{
-  width:200px;/*20181227 수정*/
-  height:38px;/*20181227 수정*/
+  width:200px;
+  height:38px;
   margin:0 0 0 12px!important;
   border-color: #c7c7c7;
-  padding:0 15px;/*20181227 수정*/
+  padding:0 15px;
 }
 /*ie핵*/
 /* @media screen and (min-width:0\0){.modal-content>.title_pop_wrap>input[type="text"]{
@@ -324,7 +307,7 @@ html>body .modal-content input.user{
   border-top: solid 2px #4283df;
 }
 .modal-content.file_upload>.user_search_wrap>li {
-  width: 60px;/*20181227 수정*/
+  width: 60px;
   padding-left: 20px;
   float: left;
   text-align: left;
@@ -334,19 +317,19 @@ html>body .modal-content input.user{
   border-bottom: solid 1px #ebebeb;
 }
 .modal-content.file_upload>.user_search_wrap>li:nth-child(2n+1) {
-  background: #f7f7f9;/*20181227 수정*/
+  background: #f7f7f9;
 }
 .modal-content.file_upload>.user_search_wrap>li:nth-child(2n) {
-  width: 262px;/*20181227 수정*/
+  width: 262px;
   padding-right: 20px;
 }
 html>body .modal-content.file_upload input.user{width:218px;margin-top: 13px !important;}
 
 .modal-content.file_upload .btn_file{
   margin: 0!important;
-  height: 38px;/*20181227 수정*/
-  width:87px;/*20181227 수정*/
-  line-height: 38px;/*20181227 수정*/
+  height: 38px;
+  width:87px;
+  line-height: 38px;
   font-size:14.5px;
   background: #f3f6ff;
   color:#333;
@@ -355,7 +338,7 @@ html>body .modal-content.file_upload input.user{width:218px;margin-top: 13px !im
 .modal-content.file_upload .btn_file:last-child{margin-left: 6px !important;}
 
 .modal-content.file_upload input[type="text"].user{
-    width: 260px;/*20181227 수정*/
+    width: 260px;
     padding:0 15px;
     border-color:#ccc;
 }
