@@ -17,9 +17,9 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 8% auto; /* 15% from the top and centered */
+    margin: 8% auto;
     border: 1px solid #888;
-    width: 800px; /* Could be more or less, depending on screen size */
+    width: 800px;
     height: 870px;
     position: relative;
 }
@@ -61,18 +61,18 @@
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
   width: 81px;
-  height: 34px;
-  padding: 7px 13px;
+  /* height: 34px; */
+  padding: 9px 13px;
   text-align: right;
+  background: url(../images/btn_plus.png) 15px 50% no-repeat;
   }
-.wrap_popup_tree>.btn_plus>a{}
-.wrap_popup_tree>.btn_plus>a::before{
+/* .wrap_popup_tree>.btn_plus>a>.img_btn_plus{
   content: url(../images/btn_plus.png);
   width: 16px;
   height: 16px;
   margin-right: 8px;
   vertical-align: -2.5px;
-}
+} */
 .wrap_popup_tree>.btn_plus>a:hover{text-decoration: none;}
 .modal-content>.user_search_wrap{
     width: 280px;
@@ -86,9 +86,10 @@
   width: 172px;
   height: 37px;
   margin: 0 8px 0 0 !important;
-  line-height: normal;
+  line-height: 36px;
   float: left;
-  padding: 0 15px;
+  padding: 0 10px;
+  font-size: 14px;
 }
 
 .modal-content button[type="button"].user,
@@ -148,11 +149,11 @@
     color: #707070;
     background: #f7f7f7;
   }
-  /*ie핵*/
   @media screen and (min-width:0\0){.box_close{
     width: 18px; line-height: 0.7;}}
 /* The Close Button */
-.close,.close0,.close1,.close2,.close3,.close4,.close5,.close6,.close7,.close8,.close9 {
+.close,.close0,.close1,.close2,.close3,.close4,
+.close5,.close6,.close7,.close8,.close9 {
     color: #aaa;
     position: absolute;
     top: 0;
@@ -193,8 +194,6 @@
 .content.popup .board:last-child{margin-bottom: 0px;}
 .content.popup .board.scroll{height: 440px;width: 100%;overflow-y: auto;}
 .button_wrap.popup{
-  /*position:absolute;
-  bottom:50px;*/
   width: 100%;
   text-align: center;
   margin:30px 0 50px;
@@ -203,7 +202,6 @@
 
 .button_wrap.popup_title{
   float: left;
-  /*width: 100%;*/
   padding:0 75px;
   text-align: center;
   margin:30px 0 0;
@@ -215,10 +213,8 @@
 .text_left td:first-child{text-align: left;}
 .board.popup .pagebtn{margin-top: 24px;}
 
-/*업무조직 정보 start*/
 .modal-content.com{width: 350px;}
 
-/*업무조직 정보 end*/
 .modal-content.com.title_pop{width: 360px;height:455px;}
 .modal-content>.title_pop_wrap{
     width: 320px;
@@ -246,19 +242,23 @@
   width: 200px !important;
   height:38px !important;
 }
+.title_select select{
+  padding:7px 13px;
+}
 .title_select>select,
 .modal-content>.title_pop_wrap>input[type="text"]{
   width:200px;
   height:38px;
+  /* line-height: 50px; */
   margin:0 0 0 12px!important;
   border-color: #c7c7c7;
   padding:0 15px;
 }
-/*ie핵*/
-/* @media screen and (min-width:0\0){.modal-content>.title_pop_wrap>input[type="text"]{
-  width:158px; height:34px;}} *//*20181227 삭제*/
 
-
+input[type="text"].user::-webkit-input-placeholder{/*사파리iOS 팝업 플레이스 홀더 상단 간격 조정*/
+  line-height: normal;
+  padding-top: 8px;
+}
   .popup_group{
     width: 270px;
     height:310px;
@@ -277,7 +277,7 @@
   margin: 14px 0px 0;
   padding: 15px 20px;
   background: none;
-  position: static;/* 20181226 수정*/
+  position: static;
 }
 .fixed_sidemenu {
     border: 1px solid #e0e0e0;
@@ -292,7 +292,6 @@
   border-color: #cccccc;
   padding-right: 1px;
 }
-/*ie핵*/
 @media screen and (min-width:0\0){.modal-content.file_upload>.user_search_wrap>.button_default{
   height:36px;}}
 
@@ -316,10 +315,10 @@
   line-height: 61px;
   border-bottom: solid 1px #ebebeb;
 }
-.modal-content.file_upload>.user_search_wrap>li:nth-child(2n+1) {
+.modal-content.file_upload>.user_search_wrap>.fileBox_title {
   background: #f7f7f9;
 }
-.modal-content.file_upload>.user_search_wrap>li:nth-child(2n) {
+.modal-content.file_upload>.user_search_wrap>.fileBox_info {
   width: 262px;
   padding-right: 20px;
 }
@@ -342,12 +341,6 @@ html>body .modal-content.file_upload input.user{width:218px;margin-top: 13px !im
     padding:0 15px;
     border-color:#ccc;
 }
-/*ie핵*/
-/* @media screen and (min-width:0\0){.modal-content.file_upload input[type="text"].user{
-  width:170px; height:36px;}}
-@media screen and (min-width:0\0){.modal-content.file_upload input[type="file"].user{
-    width:170px; height:36px;}} *//*20181227 삭제*/
-
 .file_upload_info{ margin: 12px 20px 0px;}
 .file_upload_info>p{
   color: #696969;

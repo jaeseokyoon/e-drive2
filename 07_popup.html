@@ -5,10 +5,8 @@
   <title>Gaea Soft</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1100">
-  <!--20181227 위치 최상위 고정 start-->
   <link rel="stylesheet" type="text/css" href="./ztree/css/mypage.css"><!-- 마이페이지 스타일 -->
   <link rel="stylesheet" type="text/css" href="./ztree/css/zTreeStyle.css">
-  <!--20181227 위치 최상위 고정 end-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
@@ -17,6 +15,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
   <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<!--  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script> 셀렉터 전용 -->
   <script type="text/javascript" src="./js/jquery.bpopup.min.js"></script>
 
 <!--zTree tree.html에서 가져온 파일 start-->
@@ -103,9 +102,7 @@
             </div>
           </div>
           <!--트리 start-->
-          <!--181130 popup_folder=>popup_group으로 수정, style삭제 start-->
           <div class="fixed_sidemenu popup_group">
-          <!--181130 popup_folder=>popup_group으로 수정 end-->
             <div class="sm_content">
               <!-- 상세 트리 리스트 -->
               <!-- tree -->
@@ -169,6 +166,11 @@
               <div class="board popup scroll text_left">
                 <form>
                   <table cellspacing="0" cellpadding="0">
+                    <colgroup>
+                      <col width="20%"/>
+                      <col width=""/>
+                      <col width="20%"/>
+                    </colgroup>
                     <tr>
                       <th>아이디</th>
                       <th>권한</th>
@@ -181,8 +183,11 @@
                           <div class="selectbox">
                             <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                             <select id="select01">
-                              <option>선택</option>
+                              <option>선택해주세요</option>
+                              <option>선택1</option>
                               <option>선택2</option>
+                              <option>선택3</option>
+                              <option>선택4</option>
                             </select>
                           </div>
                         </div>
@@ -558,7 +563,6 @@
           <div class="title_pop_wrap padding_bottom0">
               <button type="button" class="button_default oper">항목1</button>
               <div class="title_select">
-                <!--20181227 추가 start-->
                 <div class="selectbox">
                   <label for="select01" placeholder="선택하세요.">선택하세요.</label>
                   <select id="select01">
@@ -566,7 +570,6 @@
                     <option>선택2</option>
                   </select>
                 </div>
-                <!--20181227 추가 end-->
               </div>
           </div>
 
@@ -590,16 +593,16 @@
           <h3 class="title">File Upload</h3><span class="close5 b-close">&nbsp;</span>
 
           <ul class="user_search_wrap fileBox">
-            <li class="file_route">
+            <li class="file_route fileBox_title">
               경로
             </li>
-            <li class="file_route">
+            <li class="file_route fileBox_info">
               <span>folder/index.html</span>
             </li>
-            <li>
+            <li class="fileBox_title">
               구분
             </li>
-            <li>
+            <li class="fileBox_info">
               <button type="button" class="button_default oper btn_file">폴더선택</button>
               <button type="button" class="button_default oper btn_file">파일선택</button>
             </li>
@@ -664,16 +667,16 @@
           <h3 class="title">폴더 생성</h3><span class="close7 b-close">&nbsp;</span>
 
           <ul class="user_search_wrap fileBox">
-            <li class="file_route">
+            <li class="file_route fileBox_title">
               경로
             </li>
-            <li class="file_route">
+            <li class="file_route fileBox_info">
               <span>folder/index.html</span>
             </li>
-            <li>
+            <li class="fileBox_title">
               폴더명
             </li>
-            <li>
+            <li class="fileBox_info">
             <input type="text" class="user fileName" placeholder="폴더명을 입력해주세요.">
             </li>
           </ul>
@@ -741,8 +744,8 @@
 
           <div class="user_search_wrap fileBox popup_notice">
             <p>
-              시스템에 등록되지 않은 아이디이거나, 아이디 또는<br/>
-              비밀번호를 잘못 입력하셨습니다.
+              시스템에 등록되지 않은 아이디이거나,아이디<br/>
+              또는비밀번호를 잘못 입력하셨습니다.
             </p>
           </div>
           <div class="button_wrap popup">

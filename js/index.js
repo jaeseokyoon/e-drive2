@@ -3,39 +3,57 @@
     $(function() {
         $('#myBtn1').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal1').bPopup();
+            $('#myModal1').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn2').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal2').bPopup();
+            $('#myModal2').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn3').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal3').bPopup();
+            $('#myModal3').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn4').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal4').bPopup();
+            $('#myModal4').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn5').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal5').bPopup();
+            $('#myModal5').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn6').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal6').bPopup();
+            $('#myModal6').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn7').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal7').bPopup();
+            $('#myModal7').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn8').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal8').bPopup();
+            $('#myModal8').bPopup({
+              follow: [false, false]
+            });
         });
 				$('#myBtn9').bind('click', function(e) {
             e.preventDefault();
-            $('#myModal9').bPopup();
+            $('#myModal9').bPopup({
+              follow: [false, false]
+            });
         });
      });
  })(jQuery);
@@ -113,7 +131,7 @@ uploadFile.on('change', function(){
 });
 
 
-/*20181218 탭메뉴 추가 start*/
+/*탭메뉴 추가 start*/
 $(function () {
 
     $(".tab_content").hide();
@@ -128,9 +146,9 @@ $(function () {
         $("#" + activeTab).fadeIn();
     });
 });
-/*20181218 탭메뉴 추가 end*/
+/*탭메뉴 추가 end*/
 
-/*20181221 select 추가 start*/
+/*select 추가 start*/
 jQuery(document).ready(function(){
 
     var select = $("select");
@@ -140,4 +158,4 @@ jQuery(document).ready(function(){
         $(this).siblings("label").text(select_name);
     });
 });
-/*20181221 select 추가 end*/
+/*select 추가 end*/
