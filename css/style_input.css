@@ -22,10 +22,6 @@ input::-webkit-input-placeholder{
   line-height: 39px;
 }
 
-/* .num .selectbox{
-  vertical-align: -13px;
-  vertical-align: -14.5px \0/IE8;
-} */
 .title_select>.selectbox{
   width: 200px;
   height: 38px;
@@ -44,6 +40,7 @@ select{
   border: 0;
   opacity: 0;
 }
+
 select::-ms-expand {display: none;}
 .selectbox label{
   width:100%;
@@ -60,10 +57,7 @@ select::-ms-expand {display: none;}
 option{border-color:#ccc;/*-webkit-appearance: none;*/}
 
 
-/* input::-webkit-input-placeholder{color:#999; letter-spacing: -0.5px;}
-input::-ms-input-placeholder{color:#999; letter-spacing: -0.5px;}
-input::-moz-input-placeholder{color:#999; letter-spacing: -0.5px;} */
-/* .placeholder {color:#999; letter-spacing: -0.5px;} */
+
 :-ms-input-placeholder {color:#999; letter-spacing: -0.5px;}
 ::-webkit-input-placeholder {color:#999; letter-spacing: -0.5px;}
 ::-moz-placeholder{color:#999; letter-spacing: -0.5px;}
@@ -149,7 +143,7 @@ textarea{width:100%; padding:0.32em ; font-size:1em; -webkit-appearance: none; c
 }
 
 
-/*input[type="text"],*/
+
 input[type="file"]{
   width: 100%;
   padding: 0px 15px;
@@ -157,10 +151,6 @@ input[type="file"]{
   font-size: 14px;
   height:42px;
   }
-  /*ie핵*/
-  /*@media screen and (min-width:0\0){input[type="text"]{width:263px;}}
-  @media screen and (min-width:0\0){input[type="file"]{width:263px;}}*/
-
 
 .user.search,
 input[type="text"].user,
@@ -175,7 +165,7 @@ button[type="submit"].user,
   display: inline-block;
   margin-right: 5px;
 }
-/*ie핵*/
+
 @media screen and (min-width:0\0){.user_select{vertical-align: -1px;}}
 
 
@@ -206,7 +196,7 @@ input[type="file"].user{
   height: 40px;
   vertical-align: -0.5px \0/ie8;
 }
-/*ie핵*/
+
 @media \0screen {
   input[type="text"].user{
     vertical-align: 1.5px;
@@ -278,9 +268,6 @@ input[type="text"].user.hasDatepicker{
     user-select: none;
 }
 
-/* .container:hover input ~ .checkmark {
-    background-color: #ccc; // enabled + unchecked box background color(when hover)
-} */
 
 .container input:checked ~ .checkmark {
     background-color: #fff; // enabled + checked box background color
@@ -344,29 +331,3 @@ input[type="text"].user.hasDatepicker{
     letter-spacing: -1.8px;
   }
 }
-
-  /* @media (max-width:1450px){
-    .num > .selectbox,
-    input[type="tel"],
-    .col4 .col2 input[type="tel"]
-    {
-    width: 28.8% !important;
-    }
-    input,.selectbox {
-    width: 36.75%;
-    }
-    .folder02_select > .selectbox {
-    width: 280px;
-    }
-    .col4 .col2 input,
-    .col4 .col2 .selectbox {
-    width: 99.9%;
-    }
-    .content.wide .col4 .col2 input,
-    .content.wide .col4 .col2 .selectbox {
-    width: 49.75%;
-    }
-    :-ms-input-placeholder {letter-spacing: -2.5px;}
-    ::-webkit-input-placeholder {letter-spacing: -2.5px;}
-    ::-moz-placeholder{letter-spacing: -2.5px;}
-  } */
