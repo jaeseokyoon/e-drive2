@@ -277,7 +277,7 @@ button[type="submit"].btn_search{
   border: solid 1px #cccccc;
 }
 
-button[type="search"]::checked{border: 0;}
+button[type="search"]:checked{border: 0;}
 .open::before{content: "+"; border: solid 1px #000;}
 
 #treeDemo.ztree{

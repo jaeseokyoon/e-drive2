@@ -35,10 +35,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, li, table, th, td,  form, a
 body {
   min-width: 320px;word-wrap:break-word;
   word-break: break-all;
-  text-size-adjust: none;
+  /* text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
+  -ms-text-size-adjust: none;  없는 속성이라 나옴*/
 
 	line-height: 1;
   font-size: 100%;
