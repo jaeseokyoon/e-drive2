@@ -10,14 +10,19 @@ a{color:#444444;}
   cursor:pointer;
   width: 170px;
 }
-:focus{
+/* :focus{
   outline: auto;
+  outline-color: #4283df;
+  color:#4283df !important;
+  border-color:#4283df !important;
 }
 a:focus,
 a:focus>span{
-  /* color: #0091d0 !important; */
   outline: auto;
-}
+  outline-color: #4283df;
+  color:#4283df !important;
+  border-color:#4283df !important;
+} */
 
 
 .material-icons.md-18 { font-size: 18px; }
@@ -234,7 +239,7 @@ a:focus>span{
 .mymenu-content.close {
     background-color: #383d43;
     color:#cacdd2;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0px solid #888;
     width: 103px;
     height: 72px;
@@ -244,6 +249,9 @@ a:focus>span{
     position: initial;
     box-sizing: border-box;
 }
+
+.no-borderradius .mymenu-content { color: red; }
+.borderradius .mymenu-content.close { color: green; }
 .mymenu-content>li {
   float: none;
   font-size: 13px;

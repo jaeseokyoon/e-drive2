@@ -246,7 +246,9 @@ button.close5,button.close6,button.close7,button.close8,button.close9
   height:38px !important;
 }
 .title_select select{
-  padding:7px 13px;
+  /* padding:0.55em 0.8em \0/IE8; */
+  padding:8px 0.8em;
+  min-height: 38px;
 }
 .title_select>select,
 .modal-content>.title_pop_wrap>input[type="text"]{

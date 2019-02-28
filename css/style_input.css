@@ -8,18 +8,18 @@ input,.selectbox{
 }
 
 input{
-  padding:0 10px;
+  padding:0.7em 0.8em;
   line-height: normal;
-  line-height: 35px \0/IE8;
 }
 input::-webkit-input-placeholder{/* 사파리 플레이스 홀더 */
   line-height: 22px;
 }
 .selectbox{
   display: inline-block;
-  position: relative;
-  vertical-align: -14px;
-  line-height: 39px;
+  /* position: relative;
+  vertical-align: -14px;*/
+  line-height: normal;
+  border: 0;
 }
 
 .title_select>.selectbox{
@@ -30,20 +30,22 @@ input::-webkit-input-placeholder{/* 사파리 플레이스 홀더 */
 
 select{
   width:100%;
-  padding:8px 13px;
+  padding:0.6em 0.8em;
+  min-height: 40px;
+  border:1px solid #ccc;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: 0;
-  border: 0;
-  opacity: 0;
+  top: 0; */
+  /* border: 0; */
+  /* opacity: 0; */
 }
 
 select::-ms-expand {display: none;}
 .selectbox label{
-  width:100%;
+  /* width:100%;
   height:100%;
   text-align: left;
   box-sizing: border-box;
@@ -51,11 +53,13 @@ select::-ms-expand {display: none;}
   position: absolute;
   left: 0;
   top: 0;
-  color:#999;
-  background: url(../images/icon_arrow_select.png) no-repeat 97% 50% #fff;
+  color:#999; */
+  display: none;
 }
 option{border-color:#ccc;/*-webkit-appearance: none;*/}
-
+:root select{
+  background: url(../images/icon_arrow_select.png) no-repeat 95% 50% #fff;
+}
 
 
 :-ms-input-placeholder {color:#999; letter-spacing: -0.5px;}
@@ -239,7 +243,7 @@ input[type="text"].user.hasDatepicker{
 .container input {
     position: absolute;
     left: 0;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     cursor: pointer;
     width:auto;height:auto;
     width: 25px;
