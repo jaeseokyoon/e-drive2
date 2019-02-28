@@ -57,9 +57,11 @@
   position: absolute;
   right: 0px;
   top: -9px;
+  color:#333;
   font-size: 14px;
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
+  line-height: normal;
   width: 81px;
   /* height: 34px; */
   padding: 9px 13px;
@@ -137,23 +139,24 @@
 
 .modal-content.folder02  .board.popup td{height:65px; text-align: center;}
 .modal-content.folder02 .pagebtn li{margin: 0 2px;}
-.box_close{
-  width: 19px;
-    padding-left: 0px;
-    border: solid 1px #d3d3d3;
-    height: 19px;
-    line-height: 0.7;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    color: #707070;
-    background: #f7f7f7;
+button.box_close{
+  width: 20px;
+padding: 0px 0px 5px;
+border: solid 1px #d3d3d3;
+height: 21px;
+line-height: 0;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+color: #707070;
+background: #f7f7f7;
   }
   @media screen and (min-width:0\0){.box_close{
     width: 18px; line-height: 0.7;}}
 /* The Close Button */
-.close,.close0,.close1,.close2,.close3,.close4,
-.close5,.close6,.close7,.close8,.close9 {
+button.close,button.close0,button.close1,button.close2,button.close3,button.close4,
+button.close5,button.close6,button.close7,button.close8,button.close9
+{
     color: #aaa;
     position: absolute;
     top: 0;

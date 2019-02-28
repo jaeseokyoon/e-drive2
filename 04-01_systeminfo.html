@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
-  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/style_table.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-1.11.0.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -21,50 +21,56 @@
         <img src="./images/logo.png" alt="로고">
       </li>
       <li>
-        <a class="" href="01_group.html">조직도</a>
+        <a class="active" href="01_group.html" title="조직도"><span>조직도</span></a>
       </li>
       <li>
-        <a href="02_manage.html">사용자 관리</a>
+        <a href="02_manage.html" title="사용자관리"><span>사용자 관리</span></a>
       </li>
       <li>
-        <a href="03_folder.html">폴더권한</a>
+        <a href="03_folder.html" title="폴더권한"><span>폴더권한</span></a>
       </li>
       <li>
-        <a href="04_system.html">시스템로그</a>
+        <a href="04_system.html" title="시스템로그"><span>시스템로그</span></a>
       </li>
       <li>
-        <a href="05_dashbord.html">대시보드</a>
+        <a href="05_dashbord.html" title="대시보드"><span>대시보드</span></a>
       </li>
       <li>
-        <a href="06_setting.html">환경설정</a>
+        <a href="06_setting.html" title="환경설정" class="mymenu_close_focus_sub"><span>환경설정</span></a>
       </li>
       <li class="menu_last">
         <div class="time">
           <span>00:00</span>&nbsp;연장
         </div>
         <div class="profile_img_wrap">
-          <img src="./images/profile.png">
+          <img src="./images/profile.png" alt="프로필 이미지">
         </div>
         <div  class="mymenu_select_wrap">
           <div class="mymenu_select">
-            <span>홍길동</span>&nbsp;님
-            <img src="./images/icon_arrow.png">
+            <button type="button" class="mymenu_select_btn">홍길동</button>&nbsp;님
+            <img src="./images/icon_arrow.png" alt="화살표 아이콘">
           </div>
-          <!-- The Modal -->
+          <!-- The Modal start-->
           <div class="mymenu_popup">
-            <!-- Modal content -->
             <ul class="mymenu-content close">
               <li class="mymenu">
-                <a href="00-01_password.html">비밀번호변경</a>
+                <a href="00-01_password.html" title="비밀번호변경">
+                  <span>비밀번호변경</span>
+                </a>
               </li>
-              <hr/>
-              <li class="mymenu">로그아웃</li>
+              <li class="mymenu">
+                <a class="mymenu_close_focus" href="#" title="로그아웃">
+                <span>로그아웃</span>
+                </a>
+              </li>
             </ul>
           </div>
+          <!-- The Modal end-->
         </div>
       </li>
     </ul>
   </div>
+
 
   <div class="wrap">
       <div class="content wide">
@@ -72,21 +78,21 @@
           <div>
             <h3>시스템로그 정보</h3>
             <ul class="col2 log_info">
-              <li class="form_title">요청ID</li>
+              <li class="form_title"><label>요청ID</label></li>
               <li class="form_info"><span>SYSLOG_00000000004170</span></li>
-              <li class="form_title">발생일자</li>
+              <li class="form_title"><label>발생일자</label></li>
               <li class="form_info"><span>20090428</span></li>
-              <li class="form_title">서비스명</li>
+              <li class="form_title"><label>서비스명</label></li>
               <li class="form_info"><span>lgrngoenrgoengornpgjmrpwmglkmgpwp[gmp]</span></li>
-              <li class="form_title">메소드명</li>
+              <li class="form_title"><label>메소드명</label></li>
               <li class="form_info"><span>selectZipList</span></li>
-              <li class="form_title">처리구분</li>
+              <li class="form_title"><label>처리구분</label></li>
               <li class="form_info"><span>조회</span></li>
-              <li class="form_title">처리시간</li>
+              <li class="form_title"><label>처리시간</label></li>
               <li class="form_info"><span>16</span></li>
-              <li class="form_title">요청자</li>
+              <li class="form_title"><label>요청자</label></li>
               <li class="form_info"><span>업무담당자</span></li>
-              <li class="form_title">요청자IP</li>
+              <li class="form_title"><label>요청자IP</label></li>
               <li class="form_info"><span>&nbsp;</span></li>
             </ul>
           </div>

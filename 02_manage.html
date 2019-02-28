@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
-  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/style_table.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-1.11.0.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -21,50 +21,55 @@
         <img src="./images/logo.png" alt="로고">
       </li>
       <li>
-        <a href="01_group.html">조직도</a>
+        <a href="01_group.html" title="조직도"><span>조직도</span></a>
       </li>
       <li>
-        <a class="active" href="02_manage.html">사용자 관리</a>
+        <a class="active" href="02_manage.html" title="사용자관리"><span>사용자 관리</span></a>
       </li>
       <li>
-        <a href="03_folder.html">폴더권한</a>
+        <a href="03_folder.html" title="폴더권한"><span>폴더권한</span></a>
       </li>
       <li>
-        <a href="04_system.html">시스템로그</a>
+        <a href="04_system.html" title="시스템로그"><span>시스템로그</span></a>
       </li>
       <li>
-        <a href="05_dashbord.html">대시보드</a>
+        <a href="05_dashbord.html" title="대시보드"><span>대시보드</span></a>
       </li>
       <li>
-        <a href="06_setting.html">환경설정</a>
+        <a href="06_setting.html" title="환경설정" class="mymenu_close_focus_sub"><span>환경설정</span></a>
       </li>
       <li class="menu_last">
         <div class="time">
           <span>00:00</span>&nbsp;연장
         </div>
         <div class="profile_img_wrap">
-          <img src="./images/profile.png">
+          <img src="./images/profile.png" alt="프로필 이미지">
         </div>
         <div  class="mymenu_select_wrap">
           <div class="mymenu_select">
-            <span>홍길동</span>&nbsp;님
-            <img src="./images/icon_arrow.png">
+            <button type="button" class="mymenu_select_btn">홍길동</button>&nbsp;님
+            <img src="./images/icon_arrow.png" alt="화살표 아이콘">
           </div>
-          <!-- The Modal -->
+          <!-- The Modal start-->
           <div class="mymenu_popup">
-            <!-- Modal content -->
             <ul class="mymenu-content close">
               <li class="mymenu">
-                <a href="00-01_password.html">비밀번호변경</a>
+                <a href="00-01_password.html" title="비밀번호변경">
+                  <span>비밀번호변경</span>
+                </a>
               </li>
-              <hr/>
-              <li class="mymenu">로그아웃</li>
+              <li class="mymenu">
+                <a class="mymenu_close_focus" href="#" title="로그아웃">
+                <span>로그아웃</span>
+                </a>
+              </li>
             </ul>
           </div>
+          <!-- The Modal end-->
         </div>
       </li>
     </ul>
-</div>
+  </div>
 
   <div class="wrap">
       <div class="content wide">
@@ -73,19 +78,18 @@
           <div class="user_search_wrap">
             <div class="user_center">
               <div class="user_select">
-                <!--20181227 추가 start-->
                 <div class="selectbox">
-                  <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
-                  <select id="select01">
+                  <label for="select01">선택하세요.</label>
+                  <select id="select01" title="사용자 선택">
                     <option>선택</option>
                     <option>선택2</option>
                   </select>
                 </div>
-                <!--20181227 추가 end-->
               </div>
-              <div style="display:inline-block; position:relative">
-                <input type="text" class="user" placeholder="검색어를 입력하세요">
-                <div class="search_window" style="display: none;">
+              <div class="user_wrap">
+                <label for="user_search">사용자 검색</label>
+                <input type="text" id="user_search" class="user" placeholder="검색어를 입력하세요" title="사용자 입력">
+                <!-- <div class="search_window" style="display: none;">
                   <ul>
                     <li class="search_data">
                       관리자
@@ -94,7 +98,7 @@
                       지어소프트
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
               <button type="button" class="user button_default">조회&nbsp;<img src="./images/search_white.png" alt="조회"></button>
               <button type="button" class="button_default">등록</button>
@@ -104,7 +108,8 @@
 
           <div class="board">
             <p>총 게시물 <span class="textblue">73</span>건 (<span class="textblue">1</span>/100page)</p>
-            <table cellspacing="0" cellpadding="0">
+            <table>
+              <caption>사용자관리 리스트</caption>
               <colgroup>
                 <col width="10%"/><!-- 순번 -->
                 <col width="10%"/><!-- 아이디 -->
@@ -115,124 +120,123 @@
                 <col width="10%"/><!-- 정책설정 -->
                 <col width="10%"/><!-- 사용여부 -->
               </colgroup>
-              <tr>
-                <th>순번</th>
-                <th>아이디</th>
-                <th>메일주소</th>
-                <th>이름</th>
-                <th>직급</th>
-                <th>휴대폰번호</th>
-                <th>정책 설정</th>
-                <th>사용 여부</th>
-              </tr>
-              <tr>
-                <td>73</td>
-                <td><a>admin</a></td>
-                <td>manager@gaeasoft.co.kr</td>
-                <td>관리자</td>
-                <td>대리</td>
-                <td>010-3333-4444</td>
-                <td>미정</td>
-                <td>사용중</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+              <thead>
+                <tr>
+                  <th scope="col">순번</th>
+                  <th scope="col">아이디</th>
+                  <th scope="col">메일주소</th>
+                  <th scope="col">이름</th>
+                  <th scope="col">직급</th>
+                  <th scope="col">휴대폰번호</th>
+                  <th scope="col">정책 설정</th>
+                  <th scope="col">사용 여부</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>73</td>
+                  <td><a>admin</a></td>
+                  <td>manager@gaeasoft.co.kr</td>
+                  <td>관리자</td>
+                  <td>대리</td>
+                  <td>010-3333-4444</td>
+                  <td>미정</td>
+                  <td>사용중</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
             </table>
             <div class="pagebtn">
-              <ul>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png" alt="first_page"></li>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_L.png" alt="left_page"></li>
-                <li class="page_num active">1</li>
-                <li class="page_num">2</li>
-                <li class="page_num">3</li>
-                <li class="page_num">4</li>
-                <li class="page_num">5</li>
-                <li class="page_num">6</li>
-                <li class="page_num">7</li>
-                <li class="page_num">8</li>
-                <li class="page_num">9</li>
-                <li class="page_num">10</li>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_R.png" alt="right_page"></li>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png" alt="last_page"></li>
-              </ul>
+              <div>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_LL.png" alt="first_page"></a>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_L.png" alt="left_page"></a>
+                <a href="#" class="page_num active">1</a>
+                <a href="#" class="page_num">2</a>
+                <a href="#" class="page_num">3</a>
+                <a href="#" class="page_num">4</a>
+                <a href="#" class="page_num">5</a>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_R.png" alt="right_page"></a>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_RR.png" alt="last_page"></a>
+              </div>
             </div>
           </div>
         </div>

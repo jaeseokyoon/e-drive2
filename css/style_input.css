@@ -12,7 +12,7 @@ input{
   line-height: normal;
   line-height: 35px \0/IE8;
 }
-input::-webkit-input-placeholder{
+input::-webkit-input-placeholder{/* 사파리 플레이스 홀더 */
   line-height: 22px;
 }
 .selectbox{
@@ -189,6 +189,10 @@ button[type="submit"].user,
 }
 
 
+.user_wrap{
+  display:inline-block; position:relative
+}
+.user_wrap>label{display: none;}
 input[type="text"].user,
 input[type="file"].user{
   display: inline-block;
@@ -234,22 +238,23 @@ input[type="text"].user.hasDatepicker{
 
 .container input {
     position: absolute;
-    opacity: 0;
+    left: 0;
+    opacity: 0.5;
     cursor: pointer;
     width:auto;height:auto;
     width: 25px;
     height:25px;
-    border: 0;
+    border: solid 1px #cccccc;
 }
 
 .checkmark {
     position: absolute;
-    left: 0;
+    left: 1px;
+    top:1px;
     height: 23px;
     width: 23px;
-    border: solid 1px #cccccc;
-    background-color: transparent; // enabled + unchecked box background color
-
+    border: 0;
+    background-color: transparent;
 }
 
 .container {
@@ -270,12 +275,12 @@ input[type="text"].user.hasDatepicker{
 
 
 .container input:checked ~ .checkmark {
-    background-color: #fff; // enabled + checked box background color
+    background-color: #fff;
 }
 
 .container input:disabled ~ .checkmark {
     display: block;
-    background-color : red; // disabled box background color
+    background-color : red;
 }
 
 .checkmark:after {

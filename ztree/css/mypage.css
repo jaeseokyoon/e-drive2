@@ -47,9 +47,9 @@ textarea{outline: none;}
 /* 버튼 : 초록 */
 .btn_green{line-height: 14px;border-radius:0;} /*2017.12.04 - 수정*/
 /* 버튼 : 좌측네비 편집 */
-.btn_re_edit{background: url(/resources/img/icon/icon_edit_gray.png) no-repeat center center;}
+/* .btn_re_edit{background: url(/resources/img/icon/icon_edit_gray.png) no-repeat center center;}
 .btn_re_edit:hover{background: url(/resources/img/icon/icon_edit_gray_on.png) no-repeat center center;}
-.btn_re_edit:active, .btn_folder:active, .btn_trash:active{box-shadow: none;}
+.btn_re_edit:active, .btn_folder:active, .btn_trash:active{box-shadow: none;} */
 /* 버튼 : 폳더추가 */
 .btn_folder{background: url(/resources/img/icon/icon_gray_folder.png) no-repeat center center; margin: 0 8px;}
 .btn_folder:hover{background: url(/resources/img/icon/icon_gray_folder_on.png) no-repeat center center; margin: 0 8px;}
@@ -106,9 +106,9 @@ textarea{outline: none;}
 .fixed_sidemenu{border: 1px solid #e0e0e0}
 .fixed_sidemenu h3{/*height: 36px; background: #e0e0e0;*/}
 .fixed_sidemenu h3:after{clear: both; display: block; content: ""}
-.fixed_sidemenu h3 div{float: left; /*margin-top: 9px;*/}
+.fixed_sidemenu div{float: left; /*margin-top: 9px;*/}
 .fixed_sidemenu .sm_content{
-	/*min-height: 510px; 
+	/*min-height: 510px;
 	height: 100%;
 	overflow-y: auto;*/
 	/*max-height: 509px;*/

@@ -9,30 +9,32 @@
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
   <link rel="stylesheet" href="css/font.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <div class="wrap login">
     <div class="login_wrap">
       <div>
-        <img src="./images/logo_main.png">
+        <img src="./images/logo_main.png" alt="로고">
       </div>
       <div class="login_ID">
-        <img src="./images/icon_user.png">
-        <input type="text" placeholder="Username">
+        <img src="./images/icon_user.png" alt="유저 아이콘">
+        <label for="Username_input">Username</label>
+        <input id="Username_input" type="text" placeholder="Username" title="아이디 입력">
       </div>
       <div class="login_PW">
-        <img src="./images/icon_pw.png">
-        <input type="password" placeholder="Password">
+        <img src="./images/icon_pw.png" alt="비밀번호 아이콘">
+        <label for="Password_input">Password</label>
+        <input id="Password_input" type="password" placeholder="Password" title="비밀번호 입력">
       </div>
       <div class="save_ID">
-        <label class="container">
-          <input type="checkbox">
+        <label class="container" for="IDcheck" tabindex="0">
+          <input type="checkbox" id="IDcheck" title="아이디 저장 체크">
           <span class="checkmark"></span>
         </label>
         아이디 저장
       </div>
-      <div class="login button_wrap">
+      <div class="login button_wrap" tabindex="0">
         <button type="button" class="login button_default blue">로그인</button>
       </div>
     </div>

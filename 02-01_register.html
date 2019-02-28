@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
-  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/style_table.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -21,46 +21,51 @@
         <img src="./images/logo.png" alt="로고">
       </li>
       <li>
-        <a class="" href="01_group.html">조직도</a>
+        <a class="active" href="01_group.html" title="조직도"><span>조직도</span></a>
       </li>
       <li>
-        <a href="02_manage.html">사용자 관리</a>
+        <a href="02_manage.html" title="사용자관리"><span>사용자 관리</span></a>
       </li>
       <li>
-        <a href="03_folder.html">폴더권한</a>
+        <a href="03_folder.html" title="폴더권한"><span>폴더권한</span></a>
       </li>
       <li>
-        <a href="04_system.html">시스템로그</a>
+        <a href="04_system.html" title="시스템로그"><span>시스템로그</span></a>
       </li>
       <li>
-        <a href="05_dashbord.html">대시보드</a>
+        <a href="05_dashbord.html" title="대시보드"><span>대시보드</span></a>
       </li>
       <li>
-        <a href="06_setting.html">환경설정</a>
+        <a href="06_setting.html" title="환경설정" class="mymenu_close_focus_sub"><span>환경설정</span></a>
       </li>
       <li class="menu_last">
         <div class="time">
           <span>00:00</span>&nbsp;연장
         </div>
         <div class="profile_img_wrap">
-          <img src="./images/profile.png">
+          <img src="./images/profile.png" alt="프로필 이미지">
         </div>
         <div  class="mymenu_select_wrap">
           <div class="mymenu_select">
-            <span>홍길동</span>&nbsp;님
-            <img src="./images/icon_arrow.png">
+            <button type="button" class="mymenu_select_btn">홍길동</button>&nbsp;님
+            <img src="./images/icon_arrow.png" alt="화살표 아이콘">
           </div>
-          <!-- The Modal -->
+          <!-- The Modal start-->
           <div class="mymenu_popup">
-            <!-- Modal content -->
             <ul class="mymenu-content close">
               <li class="mymenu">
-                <a href="00-01_password.html">비밀번호변경</a>
+                <a href="00-01_password.html" title="비밀번호변경">
+                  <span>비밀번호변경</span>
+                </a>
               </li>
-              <hr/>
-              <li class="mymenu">로그아웃</li>
+              <li class="mymenu">
+                <a class="mymenu_close_focus" href="#" title="로그아웃">
+                <span>로그아웃</span>
+                </a>
+              </li>
             </ul>
           </div>
+          <!-- The Modal end-->
         </div>
       </li>
     </ul>
@@ -74,28 +79,28 @@
             <ul class="col4 col4_top respon register">
               <li>
                 <ul class="col2 margin_bottom_0">
-                  <li class="form_title">아이디<span class="star">*</span></li>
+                  <li class="form_title"><label for="id_input">아이디<span class="star">*</span></label></li>
                   <li class="form_info">
-                    <input type="text" placeholder="아이디는 소문자만 가능합니다.">
+                    <input type="text" id="id_input" placeholder="아이디는 소문자만 가능합니다." title="아이디 입력">
                     <div class="input_impo active">아이디를 입력해주세요.</div>
                   </li>
-                  <li class="form_title">비밀번호<span class="star">*</span></li>
+                  <li class="form_title"><label for="password_input">비밀번호<span class="star">*</span></label></li>
                   <li class="form_info">
-                    <input type="password" placeholder="8~16자 이내(영문, 숫자, 특수문자 포함)">
+                    <input type="password" id="password_input" placeholder="8~16자 이내(영문, 숫자, 특수문자 포함)" title="비밀번호 입력">
                     <div class="input_impo active">양식에 맞게 입력해 주세요.</div>
                   </li>
-                  <li class="form_title">메일주소</li>
+                  <li class="form_title"><label for="mail_address">메일주소</label></li>
                   <li class="form_info">
-                    <input type="email">
+                    <input id="mail_address" type="email" title="메일주소 입력">
                   </li>
-                  <li class="form_title">직급</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">전화번호</li>
+                  <li class="form_title"><label for="grade">직급</label></li>
+                  <li class="form_info"><input id="grade" type="text" title="직급 입력"></li>
+                  <li class="form_title"><label>전화번호</label></li>
                   <li class="form_info num">
                     <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" placeholder:"">02</label>
-                      <select id="select01">
+                      <label for="select00">02</label>
+                      <select id="select00" title="전화번호 첫번째 입력">
                         <option>02</option>
                         <option>031</option>
                         <option>052</option>
@@ -103,16 +108,18 @@
                     </div>
                     <!--20181227 추가 end-->
                     <span>-</span>
-                    <input type="tel" class="num_tel">
+                    <label for="tel_num_second"></label>
+                    <input id="tel_num_second" type="tel" class="num_tel" title="전화번호 가운데 입력">
                     <span>-</span>
-                    <input type="tel" class="num_tel">
+                    <label for="tel_num_third"></label>
+                    <input id="tel_num_third" type="tel" class="num_tel" title="전화번호 마지막 입력">
                   </li>
-                  <li class="form_title">프로젝트<span class="star">*</span></li>
+                  <li class="form_title"><label>프로젝트<span class="star">*</span></label></li>
                   <li class="form_info star_select">
                     <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" placeholder:"선택해주세요.">선택해주세요.</label>
-                      <select id="select01">
+                      <label for="select01">선택해주세요.</label>
+                      <select id="select01" title="프로젝트 선택">
                         <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
@@ -122,12 +129,12 @@
                     <!--20181227 추가 end-->
                     <div class="input_impo active">프로젝트를 선택해주세요.</div>
                   </li>
-                  <li class="form_title">사용여부<span class="star">*</span></li>
+                  <li class="form_title"><label>사용여부<span class="star">*</span></label></li>
                   <li class="form_info star_select">
                     <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" placeholder:"선택해주세요.">선택해주세요.</label>
-                      <select id="select01">
+                      <label for="select02">선택해주세요.</label>
+                      <select id="select02" title="사용여부 선택">
                         <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
@@ -141,68 +148,64 @@
               </li>
               <li>
                 <ul class="col2">
-                  <li class="form_title">이름<span class="star">*</span></li>
+                  <li class="form_title"><label for="name_input">이름<span class="star">*</span></label></li>
                   <li class="form_info">
-                    <input type="text" placeholder="이름을 입력해주세요.">
+                    <input id="name_input" type="text" placeholder="이름을 입력해주세요." title="이름 입력">
                     <div class="input_impo active">이름을 입력해주세요.</div>
                   </li>
-                  <li class="form_title">비밀번호 확인<span class="star">*</span></li>
+                  <li class="form_title"><label for="password_confirm">비밀번호 확인<span class="star">*</span></label></li>
                   <li class="form_info">
-                    <input type="password" placeholder="8~16자 이내(영문, 숫자, 특수문자 포함)">
+                    <input id="password_confirm" type="password" placeholder="8~16자 이내(영문, 숫자, 특수문자 포함)" title="비밀번호 확인 입력">
                     <div class="input_impo active">새 비밀번호와 일치하지 않습니다.</div>
                   </li>
-                  <li class="form_title">부서</li>
+                  <li class="form_title"><label for="company_name">부서</label></li>
                   <li class="form_info">
                     <div class="search department">
-                      <input type="text" placeholder="검색어를 입력하세요">
+                      <input id="company_name" type="text" placeholder="검색어를 입력하세요" title="부서 입력">
                       <button type="button" class="form_btn">부서검색</button>
                       <button type="button" class="form_btn">부서 초기화</button>
                     </div>
                   </li>
-                  <li class="form_title">휴대폰 번호</li>
+                  <li class="form_title"><label>휴대폰 번호</label></li>
                   <li class="form_info num">
-                    <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" placeholder:"">02</label>
-                      <select id="select01">
-                        <option>02</option>
-                        <option>031</option>
-                        <option>052</option>
+                      <label for="select03">010</label>
+                      <select id="select03" title="휴대폰번호 첫번째 입력">
+                        <option>011</option>
+                        <option>018</option>
+                        <option>019</option>
                       </select>
                     </div>
-                    <!--20181227 추가 end-->
                     <span>-</span>
-                    <input type="tel" class="num_tel">
+                    <label for="phone_num_second"></label>
+                    <input id="phone_num_second" type="tel" class="num_tel" title="휴대폰번호 가운데 입력">
                     <span>-</span>
-                    <input type="tel" class="num_tel">
+                    <label for="phone_num_third"></label>
+                    <input id="phone_num_third" type="tel" class="num_tel" title="휴대폰번호 마지막 입력">
                   </li>
-                  <li class="form_title">도메인<span class="star">*</span></li>
+                  <li class="form_title"><label>도메인<span class="star">*</span></label></li>
                   <li class="form_info star_select">
-                    <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" placeholder:"선택해주세요.">선택해주세요.</label>
-                      <select id="select01">
+                      <label for="select04">선택해주세요.</label>
+                      <select id="select04" title="도메인 선택">
                         <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
                         <option>선택3</option>
                       </select>
                     </div>
-                    <!--20181227 추가 end-->
                   </li>
-                  <li class="form_title">역할<span class="star">*</span></li>
+                  <li class="form_title"><label>역할<span class="star">*</span></label></li>
                   <li class="form_info star_select">
-                    <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" placeholder:"선택해주세요.">선택해주세요.</label>
-                      <select id="select01">
+                      <label for="select05">선택해주세요.</label>
+                      <select id="select05"  title="역할 선택">
                         <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
                         <option>선택3</option>
                       </select>
                     </div>
-                    <!--20181227 추가 end-->
                   </li>
                   <li class="form_title nbsp">&nbsp;</li>
                   <li class="form_info">
@@ -218,19 +221,6 @@
           <button type="button" class="button_default">목록</button>
         </div>
       </div>
-      <!--팝업 start-->
-      <!-- Trigger/Open The Modal -->
-      <!--button class="myBtn">Open Modal</button-->
-
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div>Some text in the Modal..</div>
-        </div>
-      </div>
-      <!--팝업 end-->
 
 
 

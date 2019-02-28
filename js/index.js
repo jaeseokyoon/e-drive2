@@ -1,61 +1,84 @@
+//마이메뉴  start
+	// $(function () {
+	// 	$(".mymenu_select").click(
+	// 		function () {
+	// 			$(this).addClass("active");
+	// 		});
+	// });
+
+  $(function () {
+    $(".mymenu_select_btn").focus(function () {
+        $(".mymenu_select").addClass("active");
+    });
+    $(".mymenu_close_focus").blur(function () {
+        $(".mymenu_select").removeClass("active");
+    });
+    $(".mymenu_close_focus_sub").focus(function () {
+        $(".mymenu_select").removeClass("active");
+    });
+    $(window).click(function () {
+        $(".mymenu_select").removeClass("active");
+    });
+  });
+
+	$(function () {
+		$(".mymenu_close").click(
+			function(){
+			  $(".mymenu_select").removeClass("active");
+		});
+    $('.mymenu_close').on("click",function(){
+      $('.mymenu_select').focus();
+    });
+	});
+
+
+//마이메뉴 end
+
 // 팝업 start
 ;(function($) {
     $(function() {
-        $('#myBtn1').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal1').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn2').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal2').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn3').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal3').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn4').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal4').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn5').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal5').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn6').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal6').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn7').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal7').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn8').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal8').bPopup({
-              follow: [false, false]
-            });
-        });
-				$('#myBtn9').bind('click', function(e) {
-            e.preventDefault();
-            $('#myModal9').bPopup({
-              follow: [false, false]
-            });
-        });
-     });
+      for (var i = 1; i <= 10; i++){
+
+				$("#myBtn"+i).data({pop:$("#myModal"+i)});
+				$('#myBtn'+ i).on("click",function(e){
+					e.preventDefault();
+					$(this).data("pop").bPopup({
+						// follow: [false, false]
+					});
+          $(".default_cursor").focus();
+				});
+				$('.b-close1').on("click",function(){
+					$('.popupfocus1').focus();
+				});
+				$('.b-close2').on("click",function(){
+					$('.popupfocus2').focus();
+				});
+        $('.b-close3').on("click",function(){
+					$('.popupfocus3').focus();
+				});
+				$('.b-close4').on("click",function(){
+					$('.popupfocus4').focus();
+				});
+        $('.b-close5').on("click",function(){
+					$('.popupfocus5').focus();
+				});
+				$('.b-close6').on("click",function(){
+					$('.popupfocus6').focus();
+				});
+        $('.b-close7').on("click",function(){
+					$('.popupfocus7').focus();
+				});
+				$('.b-close8').on("click",function(){
+					$('.popupfocus8').focus();
+				});
+        $('.b-close9').on("click",function(){
+					$('.popupfocus9').focus();
+				});
+				$('.close').on("click",function(){
+					$('.mymenu_select').focus();
+				});
+			};
+    });
  })(jQuery);
 // 팝업 end
 
@@ -73,34 +96,7 @@
 	});
 
 /*모달팝업 start*/
-/*마이메뉴 팝업 start*/
-	$(document).ready(function(){
-			// Get the modal
-			 var modal = document.getElementById('myModal');
 
-			 // Get the button that opens the modal
-			 var btn = document.getElementById("myBtn");
-
-			 // Get the <span> element that closes the modal
-			 var span = document.getElementsByClassName("close")[0];
-
-			 // When the user clicks on the button, open the modal
-			 btn.onclick = function() {
-					 modal.style.display = "block";
-			 }
-
-			 // When the user clicks on <span> (x), close the modal
-			 span.onclick = function() {
-					 modal.style.display = "none";
-			 }
-			 // When the user clicks anywhere outside of the modal, close it
-			 window.onclick = function(event) {
-					 if (event.target == modal) {
-							 modal.style.display = "none";
-					 }
-			 }
-	});
-/*마이메뉴 팝업 end*/
 
 /*메인메뉴*/
 $("a").click(function(){

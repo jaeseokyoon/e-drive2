@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
-  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/style_table.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-1.11.0.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -21,50 +21,55 @@
         <img src="./images/logo.png" alt="로고">
       </li>
       <li>
-        <a href="01_group.html">조직도</a>
+        <a href="01_group.html" title="조직도"><span>조직도</span></a>
       </li>
       <li>
-        <a href="02_manage.html">사용자 관리</a>
+        <a href="02_manage.html" title="사용자관리"><span>사용자 관리</span></a>
       </li>
       <li>
-        <a href="03_folder.html">폴더권한</a>
+        <a href="03_folder.html" title="폴더권한"><span>폴더권한</span></a>
       </li>
       <li>
-        <a href="04_system.html">시스템로그</a>
+        <a href="04_system.html" title="시스템로그"><span>시스템로그</span></a>
       </li>
       <li>
-        <a href="05_dashbord.html">대시보드</a>
+        <a href="05_dashbord.html" title="대시보드"><span>대시보드</span></a>
       </li>
       <li>
-        <a class="active" href="06_setting.html">환경설정</a>
+        <a class="active mymenu_close_focus_sub" href="06_setting.html" title="환경설정"><span>환경설정</span></a>
       </li>
       <li class="menu_last">
         <div class="time">
           <span>00:00</span>&nbsp;연장
         </div>
         <div class="profile_img_wrap">
-          <img src="./images/profile.png">
+          <img src="./images/profile.png" alt="프로필 이미지">
         </div>
         <div  class="mymenu_select_wrap">
           <div class="mymenu_select">
-            <span>홍길동</span>&nbsp;님
-            <img src="./images/icon_arrow.png">
+            <button type="button" class="mymenu_select_btn">홍길동</button>&nbsp;님
+            <img src="./images/icon_arrow.png" alt="화살표 아이콘">
           </div>
-          <!-- The Modal -->
+          <!-- The Modal start-->
           <div class="mymenu_popup">
-            <!-- Modal content -->
             <ul class="mymenu-content close">
               <li class="mymenu">
-                <a href="00-01_password.html">비밀번호변경</a>
+                <a href="00-01_password.html" title="비밀번호변경">
+                  <span>비밀번호변경</span>
+                </a>
               </li>
-              <hr/>
-              <li class="mymenu">로그아웃</li>
+              <li class="mymenu">
+                <a class="mymenu_close_focus" href="#" title="로그아웃">
+                <span>로그아웃</span>
+                </a>
+              </li>
             </ul>
           </div>
+          <!-- The Modal end-->
         </div>
       </li>
     </ul>
-</div>
+  </div>
 
   <div class="wrap">
       <div class="content wide">
@@ -74,14 +79,14 @@
             <ul class="col4" style="margin-bottom:0px;">
               <li>
                 <ul class="col2 margin_bottom_0">
-                  <li class="form_title">서버명<span class="star">*</span></li>
-                  <li class="form_info"><input type="text"></li>
+                  <li class="form_title"><label for="server_name">서버명</label><span class="star">*</span></li>
+                  <li class="form_info"><input id="server_name" type="text" title="서버명 입력"></li>
                   <li class="form_title">서버타임<span class="star">*</span></li>
                   <li class="form_info star_select">
                     <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
-                      <select id="select01">
+                      <label for="select00">선택하세요.</label>
+                      <select id="select00" title="서버타임 선택">
                         <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
@@ -93,8 +98,8 @@
                   <li class="form_info star_select">
                     <!--20181227 추가 start-->
                     <div class="selectbox">
-                      <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
-                      <select id="select01">
+                      <label for="select01">선택하세요.</label>
+                      <select id="select01" title="하이퍼바이저종류 선택">
                         <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
@@ -102,25 +107,25 @@
                     </div>
                     <!--20181227 추가 end-->
                   </li>
-                  <li class="form_title">IP ADDRES</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">제조사</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">CPU</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">메모리</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">ADO</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">NIC</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">서버고유ID</li>
+                  <li class="form_title"><label for="ip_address">IP ADDRESS</label></li>
+                  <li class="form_info"><input id="ip_address" type="text" title="IP 주소 입력"></li>
+                  <li class="form_title"><label for="company">제조사</label></li>
+                  <li class="form_info"><input id="company" type="text" title="제조사 입력"></li>
+                  <li class="form_title"><label for="cpu">CPU</label></li>
+                  <li class="form_info"><input id="cpu" type="text" title="CPU 입력"></li>
+                  <li class="form_title"><label for="memory">메모리</label></li>
+                  <li class="form_info"><input id="memory" type="text" title="메모리 용량 입력"></li>
+                  <li class="form_title"><label for="ado">ADO</label></li>
+                  <li class="form_info"><input id="ado" type="text" title="ADO이름 입력"></li>
+                  <li class="form_title"><label for="nic">NIC</label></li>
+                  <li class="form_info"><input id="nic" type="text" title="NIC 입력"></li>
+                  <li class="form_title"><label>서버고유ID</label></li>
                   <li class="form_info"><span>TEST</span></li>
-                  <li class="form_title">서버그룹</li>
-                  <li class="form_info"><span>&nbsp</span></li>
-                  <li class="form_title">터미널 연결</li>
+                  <li class="form_title"><label>서버그룹</label></li>
+                  <li class="form_info"><span>&nbsp;</span></li>
+                  <li class="form_title"><label>터미널 연결</label></li>
                   <li class="form_info"><span>4</span></li>
-                  <li class="form_title">등록일</li>
+                  <li class="form_title"><label>등록일</label></li>
                   <li class="form_info"><span>2017-10-24</span></li>
                 </ul>
               </li>
@@ -133,8 +138,8 @@
                   <li class="form_title">서버상태<span class="star">*</span></li>
                   <li class="form_info star_select">
                     <div class="selectbox">
-                      <label for="select01" plaseholder:"선택하세요.">선택하세요.</label>
-                      <select id="select01">
+                      <label for="select02">선택하세요.</label>
+                      <select id="select02" title="서버상태 선택">
                         <option>선택해주세요.</option>
                         <option>선택1</option>
                         <option>선택2</option>
@@ -143,23 +148,23 @@
                       </select>
                     </div>
                   </li>
-                  <li class="form_title">호스트명<span class="star">*</span></li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">사용포트</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">모델명</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">CPU 갯수</li>
-                  <li class="form_info"><input type="text">&nbsp;&nbsp;개</li>
-                  <li class="form_title">RAM 사이즈</li>
-                  <li class="form_info"><input type="text">&nbsp;&nbsp;GB</li>
-                  <li class="form_title">DVD</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">Video Card</li>
-                  <li class="form_info"><input type="text"></li>
-                  <li class="form_title">메인서버타입</li>
+                  <li class="form_title"><label for="hosting_name">호스트명<span class="star">*</span></label></li>
+                  <li class="form_info"><input id="hosting_name" type="text" title="호스트명 입력"></li>
+                  <li class="form_title"><label for="useport">사용포트</label></li>
+                  <li class="form_info"><input id="useport" type="text" title="사용포트 입력"></li>
+                  <li class="form_title"><label for="model_name">모델명</label></li>
+                  <li class="form_info"><input id="model_name" type="text" title="모델명 입력"></li>
+                  <li class="form_title"><label for="cpu_total">CPU 갯수</label></li>
+                  <li class="form_info"><input id="cpu_total" type="text" title="CPU갯수 입력">&nbsp;&nbsp;개</li>
+                  <li class="form_title"><label for="ram_size">RAM 사이즈</label></li>
+                  <li class="form_info"><input id="ram_size" type="text" title="RAM 사이즈 입력">&nbsp;&nbsp;GB</li>
+                  <li class="form_title"><label for="dvd">DVD</label></li>
+                  <li class="form_info"><input id="dvd" type="text" title="DVD 입력"></li>
+                  <li class="form_title"><label for="Video_Card">Video Card</label></li>
+                  <li class="form_info"><input id="Video_Card" type="text" title="비디오카드 입력"></li>
+                  <li class="form_title"><label>메인서버타입</label></li>
                   <li class="form_info"><span>Main</span></li>
-                  <li class="form_title">서버구동상태</li>
+                  <li class="form_title"><label>서버구동상태</label></li>
                   <li class="form_info"><span>Run</span></li>
 
                   <li class="form_title nbsp">&nbsp;</li>
@@ -171,9 +176,11 @@
               </li>
             </ul>
             <ul class="col2 server">
-              <li class="form_title">서버상태</li>
+              <li class="form_title">
+                <label for="server_con">서버상태</label>
+              </li>
               <li class="form_info">
-                <textarea></textarea>
+                <textarea id="server_con" title="서버상태 설명 입력"></textarea>
               </li>
             </ul>
           </div>

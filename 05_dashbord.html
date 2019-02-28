@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
-  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/style_table.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -21,46 +21,51 @@
         <img src="./images/logo.png" alt="로고">
       </li>
       <li>
-        <a href="01_group.html">조직도</a>
+        <a href="01_group.html" title="조직도"><span>조직도</span></a>
       </li>
       <li>
-        <a href="02_manage.html">사용자 관리</a>
+        <a href="02_manage.html" title="사용자관리"><span>사용자 관리</span></a>
       </li>
       <li>
-        <a href="03_folder.html">폴더권한</a>
+        <a href="03_folder.html" title="폴더권한"><span>폴더권한</span></a>
       </li>
       <li>
-        <a href="04_system.html">시스템로그</a>
+        <a href="04_system.html" title="시스템로그"><span>시스템로그</span></a>
       </li>
       <li>
-        <a class="active" href="05_dashbord.html">대시보드</a>
+        <a class="active" href="05_dashbord.html" title="대시보드"><span>대시보드</span></a>
       </li>
       <li>
-        <a href="06_setting.html">환경설정</a>
+        <a href="06_setting.html" title="환경설정" class="mymenu_close_focus_sub"><span>환경설정</span></a>
       </li>
       <li class="menu_last">
         <div class="time">
           <span>00:00</span>&nbsp;연장
         </div>
         <div class="profile_img_wrap">
-          <img src="./images/profile.png">
+          <img src="./images/profile.png" alt="프로필 이미지">
         </div>
         <div  class="mymenu_select_wrap">
           <div class="mymenu_select">
-            <span>홍길동</span>&nbsp;님
-            <img src="./images/icon_arrow.png">
+            <button type="button" class="mymenu_select_btn">홍길동</button>&nbsp;님
+            <img src="./images/icon_arrow.png" alt="화살표 아이콘">
           </div>
-          <!-- The Modal -->
+          <!-- The Modal start-->
           <div class="mymenu_popup">
-            <!-- Modal content -->
             <ul class="mymenu-content close">
               <li class="mymenu">
-                <a href="00-01_password.html">비밀번호변경</a>
+                <a href="00-01_password.html" title="비밀번호변경">
+                  <span>비밀번호변경</span>
+                </a>
               </li>
-              <hr/>
-              <li class="mymenu">로그아웃</li>
+              <li class="mymenu">
+                <a class="mymenu_close_focus" href="#" title="로그아웃">
+                <span>로그아웃</span>
+                </a>
+              </li>
             </ul>
           </div>
+          <!-- The Modal end-->
         </div>
       </li>
     </ul>
@@ -91,11 +96,11 @@
               </div>
             </li>
           </ul>
-        <div class="button_wrap">
-          <button type="button" class="button_default blue width130">새로고침&nbsp;<img class="btn_new" src="./images/new.png" alt="새로고침"></button>
+          <div class="button_wrap">
+            <button type="button" class="button_default blue width130">새로고침&nbsp;<img class="btn_new" src="./images/new.png" alt="새로고침"></button>
+          </div>
         </div>
-      </div>
-
+    </div>
   </div>
 <script  src="js/index.js"></script>
 </body>

@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_input.css">
   <link rel="stylesheet" href="css/style_popup.css">
-  <link rel="stylesheet" href="css/style_table.min.css">
+  <link rel="stylesheet" href="css/style_table.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -21,50 +21,55 @@
         <img src="./images/logo.png" alt="로고">
       </li>
       <li>
-        <a href="01_group.html">조직도</a>
+        <a href="01_group.html" title="조직도"><span>조직도</span></a>
       </li>
       <li>
-        <a href="02_manage.html">사용자 관리</a>
+        <a href="02_manage.html" title="사용자관리"><span>사용자 관리</span></a>
       </li>
       <li>
-        <a href="03_folder.html">폴더권한</a>
+        <a href="03_folder.html" title="폴더권한"><span>폴더권한</span></a>
       </li>
       <li>
-        <a class="active" href="04_system.html">시스템로그</a>
+        <a class="active" href="04_system.html" title="시스템로그"><span>시스템로그</span></a>
       </li>
       <li>
-        <a href="05_dashbord.html">대시보드</a>
+        <a href="05_dashbord.html" title="대시보드"><span>대시보드</span></a>
       </li>
       <li>
-        <a href="06_setting.html">환경설정</a>
+        <a href="06_setting.html" title="환경설정" class="mymenu_close_focus_sub"><span>환경설정</span></a>
       </li>
       <li class="menu_last">
         <div class="time">
           <span>00:00</span>&nbsp;연장
         </div>
         <div class="profile_img_wrap">
-          <img src="./images/profile.png">
+          <img src="./images/profile.png" alt="프로필 이미지">
         </div>
         <div  class="mymenu_select_wrap">
           <div class="mymenu_select">
-            <span>홍길동</span>&nbsp;님
-            <img src="./images/icon_arrow.png">
+            <button type="button" class="mymenu_select_btn">홍길동</button>&nbsp;님
+            <img src="./images/icon_arrow.png" alt="화살표 아이콘">
           </div>
-          <!-- The Modal -->
+          <!-- The Modal start-->
           <div class="mymenu_popup">
-            <!-- Modal content -->
             <ul class="mymenu-content close">
               <li class="mymenu">
-                <a href="00-01_password.html">비밀번호변경</a>
+                <a href="00-01_password.html" title="비밀번호변경">
+                  <span>비밀번호변경</span>
+                </a>
               </li>
-              <hr/>
-              <li class="mymenu">로그아웃</li>
+              <li class="mymenu">
+                <a class="mymenu_close_focus" href="#" title="로그아웃">
+                <span>로그아웃</span>
+                </a>
+              </li>
             </ul>
           </div>
+          <!-- The Modal end-->
         </div>
       </li>
     </ul>
-</div>
+  </div>
 
   <div class="wrap">
       <div class="content wide">
@@ -72,18 +77,19 @@
           <h3>시스템 로그조회</h3>
           <div class="user_search_wrap">
             <div class="user_center">
-              <span>발행일자</span>
-              <input type="text" id="datepicker" class="user"><span class="hyphen">-</span>
-              <input type="text" id="datepicker2" class="user">&nbsp;&nbsp;
-              <span>처리구분</span>
-              <input type="text" class="user" placeholder="검색어를 입력하세요" style="width:170px;"><!--20181227 수정-->
+              <label for="datepicker">발행일자</label>
+              <input type="text" id="datepicker" class="user" title="발행일자 시작 입력"><span class="hyphen">-</span>
+              <input type="text" id="datepicker2" class="user" title="발행일자 끝 입력">&nbsp;&nbsp;
+              <label for="system_search">처리구분</label>
+              <input id="system_search" type="text" class="user" placeholder="검색어를 입력하세요" style="width:170px;">
               <button type="button" class="user button_default">조회&nbsp;<img src="./images/search_white.png" alt="조회"></button>
             </div>
           </div>
 
 
           <div class="board">
-            <table cellspacing="0" cellpadding="0">
+            <table>
+              <caption>시스템 로그 조회 리스트</caption>
               <colgroup>
                 <!-- 20181227 수정 start -->
                 <col width="10%"/><!-- 번호 -->
@@ -95,119 +101,119 @@
                 <col width="15%"/><!-- 요청자 -->
                 <!-- 20181227 수정 end -->
               </colgroup>
-              <tr>
-                <th>번호</th>
-                <th>요청ID</th>
-                <th>발생일자</th>
-                <th>메소드명</th>
-                <th>처리구분</th>
-                <th>처리시간</th>
-                <th>요청자</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>admin</td>
-                <td>2018-10-25</td>
-                <td>fkbaibwelkfej</td>
-                <td>조회</td>
-                <td>16:15:30</td>
-                <td>업무담당자</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+              <thead>
+                <tr>
+                  <th scope="col">번호</th>
+                  <th scope="col">요청ID</th>
+                  <th scope="col">발생일자</th>
+                  <th scope="col">메소드명</th>
+                  <th scope="col">처리구분</th>
+                  <th scope="col">처리시간</th>
+                  <th scope="col">요청자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>admin</td>
+                  <td>2018-10-25</td>
+                  <td>fkbaibwelkfej</td>
+                  <td>조회</td>
+                  <td>16:15:30</td>
+                  <td>업무담당자</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
             </table>
             <div class="pagebtn">
-              <ul>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_LL.png"alt="first_page"></li>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_L.png"alt="left_page"></li>
-                <li class="page_num active">1</li>
-                <li class="page_num">2</li>
-                <li class="page_num">3</li>
-                <li class="page_num">4</li>
-                <li class="page_num">5</li>
-                <li class="page_num">6</li>
-                <li class="page_num">7</li>
-                <li class="page_num">8</li>
-                <li class="page_num">9</li>
-                <li class="page_num">10</li>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_R.png"alt="right_page"></li>
-                <li class="page_cuser"><img src="./images/icon_pagebtn_RR.png"alt="last_page"></li>
-              </ul>
+              <div>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_LL.png" alt="first_page"></a>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_L.png" alt="left_page"></a>
+                <a href="#" class="page_num active">1</a>
+                <a href="#" class="page_num">2</a>
+                <a href="#" class="page_num">3</a>
+                <a href="#" class="page_num">4</a>
+                <a href="#" class="page_num">5</a>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_R.png" alt="right_page"></a>
+                <a href="#" class="page_cuser"><img src="./images/icon_pagebtn_RR.png" alt="last_page"></a>
+              </div>
             </div>
           </div>
 
       </div>
   </div>
+</div>
   <script  src="js/index.js"></script>
 </body>
 
