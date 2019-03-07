@@ -124,6 +124,7 @@ a:focus>span{
 .main_menu{
   padding:0 45px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .main_menu>li:first-child{
   margin: 18px 3% 25px 0;
